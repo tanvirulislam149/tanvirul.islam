@@ -1,12 +1,11 @@
 import './App.css';
-import Header from './Pages/Header/Header';
-import Banner from './Pages/Banner/Banner';
+import Home from './Pages/Home/Home';
+
 
 function App() {
   return (
     <div className='bg-black text-white'>
-      <Header></Header>
-      <Banner></Banner>
+      <Home></Home>
     </div>
   );
 }
