@@ -5,7 +5,7 @@ import "./Banner.css"
 
 const Banner = () => {
     return (
-        <div className='md:flex justify-between mb-96 md:px-20 h-screen items-center'>
+        <div className='md:flex justify-between md:px-20 h-screen items-center'>
             <div className='banner-font pt-28 pb-10 px-5 md:pb-0 md:px-0 md:pt-0'>
                 <p className='text-2xl md:text-5xl'>Hello, I am</p>
                 <p className='text-4xl md:text-7xl typing'></p>

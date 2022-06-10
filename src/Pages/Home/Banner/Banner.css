@@ -6,7 +6,7 @@
 
 .typing::before {
     content: "Tanvirul Islam";
-    animation: typing 2s linear infinite;
+    animation: typing 3s linear infinite;
 }
 
 @keyframes typing {
