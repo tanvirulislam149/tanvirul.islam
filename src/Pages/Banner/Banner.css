@@ -3,3 +3,98 @@
 .banner-font {
     font-family: 'Abril Fatface', cursive;
 }
+
+.typing::before {
+    content: "Tanvirul Islam";
+    animation: typing 2s linear infinite;
+}
+
+@keyframes typing {
+    0% {
+        content: "|";
+    }
+
+    7% {
+        content: "Ta|";
+    }
+
+    14% {
+        content: "Tan|";
+    }
+
+    21% {
+        content: "Tanv|";
+    }
+
+    28% {
+        content: "Tanvi|";
+    }
+
+    35% {
+        content: "Tanvir|";
+    }
+
+    42% {
+        content: "Tanviru|";
+    }
+
+    49% {
+        content: "Tanvirul|";
+    }
+
+    56% {
+        content: "Tanvirul |";
+    }
+
+    63% {
+        content: "Tanvirul I|";
+    }
+
+    70% {
+        content: "Tanvirul Is|";
+    }
+
+    77% {
+        content: "Tanvirul Isl|";
+    }
+
+    84% {
+        content: "Tanvirul Isla|";
+    }
+
+    91% {
+        content: "Tanvirul Islam|";
+    }
+
+    92% {
+        content: "Tanvirul Isla|";
+    }
+
+    93% {
+        content: "Tanvirul Isl|";
+    }
+
+    94% {
+        content: "Tanvirul Is|";
+    }
+
+    95% {
+        content: "Tanvirul I|";
+    }
+
+    96% {
+        content: "Tanvirul|";
+    }
+
+    97% {
+        content: "Tanvir|";
+    }
+
+    98% {
+        content: "Tanv|";
+    }
+
+    100% {
+        content: "|";
+    }
+}
