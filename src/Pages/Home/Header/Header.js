@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <div className='flex justify-between bg-black fixed-top pt-3 pb-1 px-5 md:px-28'>
             <div>
-                <p className='text-5xl font-bold text-white font'>taNvir</p>
+                <p className='text-5xl font-bold font text-green-300'>taNvir</p>
             </div>
             <div>
                 <OffCanvas></OffCanvas>

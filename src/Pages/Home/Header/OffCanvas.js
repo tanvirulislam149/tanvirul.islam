@@ -5,7 +5,7 @@ import React from 'react';
 const OffCanvas = () => {
     return (
         <div>
-            <button class="inline-block  text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:bg-blue-700 focus:shadow-lg  focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out mr-1.5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><FontAwesomeIcon className='h-8' icon={faGripLines} /></button>
+            <button class="inline-block  text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:bg-blue-700 focus:shadow-lg  focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out mr-1.5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><FontAwesomeIcon className='h-8 text-green-300' icon={faGripLines} /></button>
 
             <div class="offcanvas offcanvas-end fixed bottom-0 flex flex-col max-w-full invisible bg-clip-padding shadow-sm outline-none transition duration-300 ease-in-out bg-blue-500 top-0 right-0 border-none w-64" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header flex items-center justify-between p-4">
