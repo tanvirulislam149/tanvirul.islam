@@ -4,6 +4,10 @@
     font-family: 'Abril Fatface', cursive;
 }
 
+.text-font {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .typing::before {
     content: "Tanvirul Islam";
     animation: typing 3s linear infinite;

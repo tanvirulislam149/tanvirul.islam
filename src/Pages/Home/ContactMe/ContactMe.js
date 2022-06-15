@@ -25,11 +25,11 @@ const ContactMe = () => {
                 <div className='md:w-1/2'>
                     <img className='w-full' src={email} alt="" />
                 </div>
-                <div className='mx-auto mt-20 md:mt-0  text-center text-black'>
+                <div className='md:mx-auto mx-5 mt-20 md:mt-0  text-center text-black'>
                     <form ref={form} onSubmit={sendEmail}>
-                        <input className='my-2 rounded-2xl md:w-96 w-80 px-4 py-2' required placeholder='Your Name' type="text" name="user_name" /> <br />
-                        <input className='my-2 rounded-2xl md:w-96 w-80 px-4 py-2' required placeholder='Your Email' type="email" name="user_email" /> <br />
-                        <textarea className=' my-2 rounded-2xl md:w-96 w-80 px-4 py-2' required placeholder='Your Message' name="message" cols="30" rows="10"></textarea> <br />
+                        <input className='my-2 rounded-2xl md:w-96 w-full px-4 py-2' required placeholder='Your Name' type="text" name="user_name" /> <br />
+                        <input className='my-2 rounded-2xl md:w-96 w-full px-4 py-2' required placeholder='Your Email' type="email" name="user_email" /> <br />
+                        <textarea className=' my-2 rounded-2xl md:w-96 w-full px-4 py-2' required placeholder='Your Message' name="message" cols="30" rows="10"></textarea> <br />
                         <input className='cursor-pointer bg-green-300 text-black font-bold text-xl my-2 rounded-2xl w-42 px-4 py-2' type="submit" value="Send Email" />
                     </form>
                 </div>

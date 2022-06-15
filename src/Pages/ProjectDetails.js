@@ -1,62 +1,49 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from "react-router-dom";
+import { useParams } from 'react-router-dom';
+import projects from "./AllProjects";
+import { FaCheck } from "react-icons/fa";
 
 const ProjectDetails = () => {
     let { projectId } = useParams();
-    const [services, setServices] = useState([]);
-    console.log(services);
-
-    useEffect(() => {
-        fetch("data.json")
-            .then(res => res.json())
-            .then(data => setServices(data));
-    }, [])
-
+    const projectArray = projects.filter(p => p.id === parseInt(projectId));
+    const { pictures1, pictures2, pictures3, pictures4, name, description, tech, features, clientLink, serverLink, SiteLink } = projectArray[0];
     return (
-        <div className='pt-36'>
-            <p>project Details {projectId}</p>
-            <section class="overflow-hidden text-gray-700 ">
-                <div class="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
-                    <div class="flex flex-wrap -m-1 md:-m-2">
-                        <div class="flex flex-wrap w-1/3">
-                            <div class="w-full p-1 md:p-2">
-                                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                                    src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" />
-                            </div>
-                        </div>
-                        <div class="flex flex-wrap w-1/3">
-                            <div class="w-full p-1 md:p-2">
-                                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                                    src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp" />
-                            </div>
-                        </div>
-                        <div class="flex flex-wrap w-1/3">
-                            <div class="w-full p-1 md:p-2">
-                                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                                    src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" />
-                            </div>
-                        </div>
-                        <div class="flex flex-wrap w-1/3">
-                            <div class="w-full p-1 md:p-2">
-                                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                                    src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp" />
-                            </div>
-                        </div>
-                        <div class="flex flex-wrap w-1/3">
-                            <div class="w-full p-1 md:p-2">
-                                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                                    src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp" />
-                            </div>
-                        </div>
-                        <div class="flex flex-wrap w-1/3">
-                            <div class="w-full p-1 md:p-2">
-                                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                                    src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp" />
-                            </div>
-                        </div>
-                    </div>
+        <div className='pt-20 md:px-20'>
+            <p className='text-3xl text-green-300 banner-font py-3'>{name}</p>
+            <div className='md:grid grid-cols-2 gap-4'>
+                <img className='py-2 md:py-0' src={pictures1} alt="" />
+                <img className='py-2 md:py-0' src={pictures2} alt="" />
+                <img className='py-2 md:py-0' src={pictures3} alt="" />
+                <img className='py-2 md:py-0' src={pictures4} alt="" />
+            </div>
+            <div>
+                <div className='py-20 md:px-5 flex justify-center'>
+                    <button type="button" class="p-3 bg-green-300 border-2 border-green-300 text-black font-medium md:text-lg banner-font leading-tight uppercase rounded shadow-md hover:bg-black hover:text-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"><a href={clientLink} target={"blank"}>Client-side Code</a></button> <br />
+                    <button type="button" class="md:my-0 mx-3 md:mx-10 p-3 bg-green-300 border-2 border-green-300 text-black font-medium md:text-lg banner-font leading-tight uppercase rounded shadow-md hover:bg-black hover:text-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"> <a href={serverLink} target={"blank"}>Server-side Code</a></button> <br />
+                    <button type="button" class=" p-3 bg-green-300 border-2 border-green-300 text-black font-medium md:text-lg banner-font leading-tight uppercase rounded shadow-md hover:bg-black hover:text-white hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"><a href={SiteLink} target={"blank"}>Live-Site Link</a></button> <br />
                 </div>
-            </section>
+            </div>
+            <div className='md:flex  justify-between py-20'>
+                <p className='text-3xl md:w-1/4 text-center text-green-300 banner-font py-3'>Description</p>
+                <p className='text-xl px-5 text-justify md:w-4/6 banner-font'>{description}</p>
+            </div>
+            <div className='md:flex justify-between py-5'>
+                <p className='text-3xl md:w-1/4 text-center text-green-300 banner-font py-3'>Features</p>
+                <div className='text-xl px-5 md:w-4/6 banner-font'>
+                    <li className='flex justify-start'>
+                        <p><span className='font-bold'>--</span>{features[0]}</p>
+                    </li>
+                    <li className='flex justify-start'>
+                        <p><span className='font-bold'>--</span>{features[1]}</p>
+                    </li>
+                    <li className='flex justify-start'>
+                        <p><span className='font-bold'>--</span>{features[2]}</p>
+                    </li>
+                </div>
+            </div>
+            <div className='md:flex justify-between py-20'>
+                <p className='text-3xl md:w-1/4 text-center text-green-300 banner-font'>Technologies</p>
+                <p className='text-xl md:w-4/6 px-5 banner-font'>{tech}</p>
+            </div>
         </div>
     );
 };
