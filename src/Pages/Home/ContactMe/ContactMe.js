@@ -19,7 +19,7 @@ const ContactMe = () => {
     };
 
     return (
-        <div>
+        <div id='contactMe'>
             <p className='text-4xl banner-font text-green-300 text-center py-12'>Get In Touch</p>
             <div className='md:flex pb-16 md:mx-20'>
                 <div className='md:w-1/2'>

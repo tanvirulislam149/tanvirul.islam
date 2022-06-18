@@ -3,7 +3,7 @@ import pic from "../../Images/aboutme.jpg"
 
 const AboutMe = () => {
     return (
-        <div className='md:mx-20 mx-5 my-10 md:flex flex-row-reverse'>
+        <div id='aboutMe' className='md:mx-20 mx-5 my-10 md:flex flex-row-reverse'>
 
             <div className='banner-font md:px-10 md:pt-48'>
                 <p className='text-4xl md:pb-10 text-green-300'>About Me</p>
