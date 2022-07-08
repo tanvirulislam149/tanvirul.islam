@@ -20,7 +20,7 @@ const ContactMe = () => {
 
     return (
         <div id='contactMe'>
-            <p className='text-4xl banner-font text-green-300 text-center py-12'>Get In Touch</p>
+            <p className='text-4xl banner-font text-green-500 text-center py-12'>Get In Touch</p>
             <div className='md:flex pb-16 md:mx-20'>
                 <div className='md:w-1/2'>
                     <img className='w-full' src={email} alt="" />
@@ -30,7 +30,7 @@ const ContactMe = () => {
                         <input className='my-2 rounded-2xl md:w-96 w-full px-4 py-2' required placeholder='Your Name' type="text" name="user_name" /> <br />
                         <input className='my-2 rounded-2xl md:w-96 w-full px-4 py-2' required placeholder='Your Email' type="email" name="user_email" /> <br />
                         <textarea className=' my-2 rounded-2xl md:w-96 w-full px-4 py-2' required placeholder='Your Message' name="message" cols="30" rows="10"></textarea> <br />
-                        <input className='cursor-pointer bg-green-300 text-black font-bold text-xl my-2 rounded-2xl w-42 px-4 py-2' type="submit" value="Send Email" />
+                        <input className='cursor-pointer bg-green-500 text-black font-bold text-xl my-2 rounded-2xl w-42 px-4 py-2' type="submit" value="Send Email" />
                     </form>
                 </div>
             </div>
