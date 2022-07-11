@@ -4,7 +4,7 @@ import "./AboutMe.css";
 
 const AboutMe = () => {
   return (
-    <div className="md:p-20 py-10 px-5 md:flex about-bg relative">
+    <div id="aboutMe" className="md:p-20 py-10 px-5 md:flex about-bg relative">
       <div className="md:w-4/12">
         <div className="flex pb-8">
           <div className="rounded-full bg-green-500 h-6 w-6"></div>
@@ -12,7 +12,9 @@ const AboutMe = () => {
           <div className="rounded-full bg-green-500 h-6 w-6"></div>
         </div>
         <div className="text-font text-xl text-justify">
-          <p className="banner-font md:text-7xl text-5xl text-green-500">ABOUT ME</p>
+          <p className="banner-font md:text-7xl text-5xl text-green-500">
+            ABOUT ME
+          </p>
           <p className="text-xl py-5">
             Hello! I am Tanvirul Islam from Chattogram, Bangladesh
           </p>
@@ -31,7 +33,12 @@ const AboutMe = () => {
       <div className="md:w-5/12 md:ml-48 py-20">
         <div className="h-full p-56 bg-green-500 invisible md:visible absolute top-0 right-0"></div>
         <div className="w-full p-36 bg-green-500 visible md:invisible absolute left-0 bottom-0 "></div>
-        <img style={{border: "16px white solid"}} className="relative md:absolute md:w-4/12 px-0" src="https://i.ibb.co/D7msbHw/aboutme.jpg" alt="" />
+        <img
+          style={{ border: "16px white solid" }}
+          className="relative md:absolute md:w-4/12 px-0"
+          src="https://i.ibb.co/D7msbHw/aboutme.jpg"
+          alt=""
+        />
       </div>
     </div>
   );

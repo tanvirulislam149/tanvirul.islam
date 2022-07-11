@@ -13,24 +13,24 @@ const Projects = () => {
   };
   return (
     <div className="md:mx-0 py-10">
-      <div className="flex py-8 pl-20">
+      <div className="flex py-8 md:pl-20 pl-4">
         <div className="rounded-full bg-green-500 h-6 w-6"></div>
         <div className="mx-3 rounded-full bg-green-500 h-6 w-6"></div>
         <div className="rounded-full bg-green-500 h-6 w-6"></div>
       </div>
-      <p className="banner-font md:text-7xl text-5xl text-green-500 pl-20  pb-10">
+      <p className="banner-font md:text-7xl text-5xl text-green-500 md:pl-20 pl-4 pb-10">
         PROJECTS
       </p>
       <div className="md:flex text-black">
         <img className="md:w-7/12 w-full" src={car} alt="" />
         <div className="bg-green-500 w-full md:w-1/2 flex flex-col justify-center">
           <p className="text-3xl font-extrabold banner-font text-center py-6">
-            AutoParts Industries Ltd.
+            AUTOPARTS INDUSTRIES LTD.
           </p>
           <li className="pl-8 font-bold pb-4">
             Build With MERN Stack Technology
           </li>
-          <p className="px-4 ">
+          <p className="px-4 text-font">
             This is a website about Car parts manufacturer company. This company
             makes some parts and deliver them to customers. Here’s a website to
             expand their business.
@@ -57,12 +57,12 @@ const Projects = () => {
         <img className="md:w-7/12 w-full" src={depot} alt="" />
         <div className="bg-green-500 w-full md:w-1/2 flex flex-col justify-center">
           <p className="text-3xl font-extrabold banner-font text-center py-6">
-            Depot Warehouse Company
+            DEPOT WAREHOUSE COMPANY
           </p>
           <li className="pl-8 font-bold pb-4">
             Build With MERN Stack Technology
           </li>
-          <p className="px-4 ">
+          <p className="px-4 text-font">
             A warehouse company website where people can store products and can
             see the products they store.
           </p>
@@ -88,9 +88,9 @@ const Projects = () => {
         <img className="md:w-7/12 w-full" src={dentcare} alt="" />
         <div className="w-full md:w-1/2 bg-green-500 flex flex-col justify-center">
           <p className="text-3xl font-extrabold banner-font text-center py-6">
-            DentCare Private Ltd.
+            DENTCARE PRIVATE LTD.
           </p>
-          <p className="px-4 ">
+          <p className="px-4 text-font">
             It is a private dental clinic website where patients can see the
             treatments and price of the treatments. They can see the treatments
             details also after login to the website.
