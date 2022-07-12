@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { FaPhoneAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaCopyright } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import logo from "../../../Images/tanvir.png";
 import bg from "../../../Images/bg.svg";
@@ -77,10 +77,10 @@ const ContactMe = () => {
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkTy4aybMTch2kmNcth1Alztez5aGuSodGTg&usqp=CAU"
             alt=""
           />
-          <p className="text-5xl text-green-500 text-font text-center">
+          <p className="text-3xl text-green-500 text-font text-center">
             Wanna ask me something?
           </p>
-          <p className="text-5xl text-green-500 text-font text-center">
+          <p className="text-3xl text-green-500 text-font text-center">
             Just send me an email.
           </p>
         </div>
@@ -135,9 +135,25 @@ const ContactMe = () => {
             d="M0,32L48,64C96,96,192,160,288,165.3C384,171,480,117,576,85.3C672,53,768,43,864,69.3C960,96,1056,160,1152,160C1248,160,1344,96,1392,64L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
           ></path>
         </svg>
-        <p className="absolute bottom-20 left-1/3 text-font text-black">
-          Developed by Tanvir
-        </p>
+        <div className="absolute bottom-2 invisible md:visible md:left-1/3">
+          <div className="flex pb-6">
+            <img className="bg-black w-24" src={logo} alt="" />
+            <div className="banner-font text-black pl-5">
+              <p className="text-4xl">Tanvirul Islam</p>
+              <p className="text-2xl">A professional frontend developer</p>
+            </div>
+          </div>
+          <p className="text-font text-black flex">
+            <FaCopyright className="my-auto mr-1" />
+            Copyright {new Date().getFullYear()}. All rights reserved
+          </p>
+        </div>
+        <div className="absolute bottom-2 left-5 visible md:invisible">
+          <p className="text-font text-black flex">
+            <FaCopyright className="my-auto mr-1" />
+            Copyright {new Date().getFullYear()}. All rights reserved
+          </p>
+        </div>
       </div>
     </div>
   );
