@@ -3,12 +3,15 @@ import emailjs from "@emailjs/browser";
 import { FaPhoneAlt, FaCopyright } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import logo from "../../../Images/tanvir.png";
+import { useState } from "react";
 
 const ContactMe = () => {
+   const [filled, setFilled] = useState(false);
    const form = useRef();
 
    const sendEmail = (e) => {
       e.preventDefault();
+      setFilled(true);
 
       emailjs
          .sendForm(
@@ -19,8 +22,8 @@ const ContactMe = () => {
          )
          .then(
             (result) => {
-               console.log(result.text);
                e.target.reset();
+               setFilled(false);
             },
             (error) => {
                console.log(error.text);
@@ -126,6 +129,7 @@ const ContactMe = () => {
                </form>
             </div>
          </div>
+
          <div className="relative">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                <path

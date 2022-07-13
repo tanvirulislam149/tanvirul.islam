@@ -11,6 +11,7 @@ import express from "../../Images/express.png";
 import mongodb from "../../Images/mongodb.svg";
 import stripe from "../../Images/stripe.png";
 import axios from "../../Images/axios.svg";
+import { motion } from "framer-motion";
 
 const Skills = () => {
    return (
@@ -26,18 +27,114 @@ const Skills = () => {
             </p>
          </div>
          <div className="grid md:grid-cols-4 grid-cols-2 gap-4 bg-green-100 p-5 rounded-xl">
-            <img className="w-24 mx-auto" src={javascript} alt="" />
-            <img className="w-32 mx-auto" src={react} alt="" />
-            <img className="w-20 mx-auto" src={html} alt="" />
-            <img className="w-20 mx-auto" src={css} alt="" />
-            <img className="w-52 my-auto mx-auto" src={tailwind} alt="" />
-            <img className="w-32 my-auto mx-auto" src={bootstrap} alt="" />
-            <img className="w-52 my-auto mx-auto" src={firebase} alt="" />
-            <img className="w-28 my-auto mx-auto" src={node} alt="" />
-            <img className="w-56 my-auto mx-auto" src={express} alt="" />
-            <img className="w-56 my-auto mx-auto" src={mongodb} alt="" />
-            <img className="w-32 my-auto mx-auto" src={stripe} alt="" />
-            <img className="w-36 my-auto mx-auto" src={axios} alt="" />
+            <motion.img
+               initial={{ opacity: 0 }}
+               whileInView={{ opacity: 1 }}
+               viewport={{ once: true, amount: 0 }}
+               transition={{ delay: 0.8, duration: 1 }}
+               className="drop-shadow-lg w-24 mx-auto"
+               src={javascript}
+               alt=""
+            />
+            <motion.img
+               initial={{ opacity: 0 }}
+               whileInView={{ opacity: 1 }}
+               viewport={{ once: true, amount: 0 }}
+               transition={{ delay: 0.5, duration: 1 }}
+               className="drop-shadow-lg w-32 mx-auto"
+               src={react}
+               alt=""
+            />
+            <motion.img
+               initial={{ opacity: 0 }}
+               whileInView={{ opacity: 1 }}
+               viewport={{ once: true, amount: 0 }}
+               transition={{ delay: 0.7, duration: 1 }}
+               className="drop-shadow-lg w-20 mx-auto"
+               src={html}
+               alt=""
+            />
+            <motion.img
+               initial={{ opacity: 0 }}
+               whileInView={{ opacity: 1 }}
+               viewport={{ once: true, amount: 0 }}
+               transition={{ delay: 0.2, duration: 1 }}
+               className="drop-shadow-lg w-20 mx-auto"
+               src={css}
+               alt=""
+            />
+            <motion.img
+               initial={{ opacity: 0 }}
+               whileInView={{ opacity: 1 }}
+               viewport={{ once: true, amount: 0 }}
+               transition={{ delay: 0, duration: 1 }}
+               className="drop-shadow-lg w-52 my-auto mx-auto"
+               src={tailwind}
+               alt=""
+            />
+            <motion.img
+               initial={{ opacity: 0 }}
+               whileInView={{ opacity: 1 }}
+               viewport={{ once: true, amount: 0 }}
+               transition={{ delay: 0.3, duration: 1 }}
+               className="drop-shadow-lg w-32 my-auto mx-auto"
+               src={bootstrap}
+               alt=""
+            />
+            <motion.img
+               initial={{ opacity: 0 }}
+               whileInView={{ opacity: 1 }}
+               viewport={{ once: true, amount: 0 }}
+               transition={{ delay: 0.9, duration: 1 }}
+               className="drop-shadow-lg w-52 my-auto mx-auto"
+               src={firebase}
+               alt=""
+            />
+            <motion.img
+               initial={{ opacity: 0 }}
+               whileInView={{ opacity: 1 }}
+               viewport={{ once: true, amount: 0 }}
+               transition={{ delay: 1, duration: 1 }}
+               className="drop-shadow-lg w-28 my-auto mx-auto"
+               src={node}
+               alt=""
+            />
+            <motion.img
+               initial={{ opacity: 0 }}
+               whileInView={{ opacity: 1 }}
+               viewport={{ once: true, amount: 0 }}
+               transition={{ delay: 0.2, duration: 1 }}
+               className="drop-shadow-lg w-56 my-auto mx-auto"
+               src={express}
+               alt=""
+            />
+            <motion.img
+               initial={{ opacity: 0 }}
+               whileInView={{ opacity: 1 }}
+               viewport={{ once: true, amount: 0 }}
+               transition={{ delay: 0.6, duration: 1 }}
+               className="drop-shadow-lg w-56 my-auto mx-auto"
+               src={mongodb}
+               alt=""
+            />
+            <motion.img
+               initial={{ opacity: 0 }}
+               whileInView={{ opacity: 1 }}
+               viewport={{ once: true, amount: 0 }}
+               transition={{ delay: 0.3, duration: 1 }}
+               className="drop-shadow-lg w-32 my-auto mx-auto"
+               src={stripe}
+               alt=""
+            />
+            <motion.img
+               initial={{ opacity: 0 }}
+               whileInView={{ opacity: 1 }}
+               viewport={{ once: true, amount: 0 }}
+               transition={{ delay: 0.9, duration: 1 }}
+               className="drop-shadow-lg w-36 my-auto mx-auto"
+               src={axios}
+               alt=""
+            />
          </div>
       </div>
    );

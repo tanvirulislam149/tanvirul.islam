@@ -2,10 +2,16 @@ import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import React from "react";
 import bg from "../../../Images/7.png";
 import "./Banner.css";
+import { motion } from "framer-motion";
 
 const Banner = () => {
    return (
-      <div className="banner-bg pt-20 px-2 flex items-center justify-center text-center banner-font">
+      <motion.div
+         initial={{ opacity: 0 }}
+         animate={{ opacity: 1 }}
+         transition={{ duration: 1.2 }}
+         className="banner-bg pt-20 px-2 flex items-center justify-center text-center banner-font"
+      >
          <div>
             <p className="text-2xl md:text-6xl">HELLO, I AM</p>
             <p className="text-5xl md:text-8xl text-green-500">
@@ -65,7 +71,7 @@ const Banner = () => {
                <br />
             </div>
          </div>
-      </div>
+      </motion.div>
    );
 };
 

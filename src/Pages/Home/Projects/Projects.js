@@ -5,6 +5,7 @@ import dentcare from "../../../Images/dentcare.png";
 import depot from "../../../Images/depot.png";
 import { MdComputer } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Projects = () => {
    let navigate = useNavigate();
@@ -21,7 +22,13 @@ const Projects = () => {
          <p className="banner-font md:text-7xl text-5xl text-green-500 md:pl-20 pl-4">
             PROJECTS
          </p>
-         <div className="md:flex text-black">
+         <motion.div
+            className="md:flex text-black"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true, amount: 0 }}
+            transition={{ duration: 0.7 }}
+         >
             <img className="md:w-7/12 w-full" src={car} alt="" />
             <div className="bg-green-500 w-full md:w-1/2 flex flex-col justify-center">
                <p className="text-3xl font-extrabold banner-font text-center py-6">
@@ -54,8 +61,14 @@ const Projects = () => {
                   </button>
                </div>
             </div>
-         </div>
-         <div className="md:flex flex-row-reverse text-black my-10 md:my-0">
+         </motion.div>
+         <motion.div
+            className="md:flex flex-row-reverse text-black my-10 md:my-0"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true, amount: 0 }}
+            transition={{ duration: 0.7 }}
+         >
             <img className="md:w-7/12 w-full" src={depot} alt="" />
             <div className="bg-green-500 w-full md:w-1/2 flex flex-col justify-center">
                <p className="text-3xl font-extrabold banner-font text-center py-6">
@@ -87,8 +100,14 @@ const Projects = () => {
                   </button>
                </div>
             </div>
-         </div>
-         <div className="md:flex text-black">
+         </motion.div>
+         <motion.div
+            className="md:flex text-black"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true, amount: 0 }}
+            transition={{ duration: 0.7 }}
+         >
             <img className="md:w-7/12 w-full" src={dentcare} alt="" />
             <div className="w-full md:w-1/2 bg-green-500 flex flex-col justify-center">
                <p className="text-3xl font-extrabold banner-font text-center py-6">
@@ -118,7 +137,7 @@ const Projects = () => {
                   </button>
                </div>
             </div>
-         </div>
+         </motion.div>
       </div>
    );
 };
