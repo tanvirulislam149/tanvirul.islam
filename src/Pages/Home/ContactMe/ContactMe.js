@@ -4,13 +4,29 @@ import { FaPhoneAlt, FaCopyright } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import logo from "../../../Images/tanvir.png";
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
 
 const ContactMe = () => {
    const [filled, setFilled] = useState(false);
    const form = useRef();
+   const toastId = React.useRef(null);
 
    const sendEmail = (e) => {
       e.preventDefault();
+      toast(
+         <div class="flex items-center justify-center">
+            <div
+               class="spinner-border animate-spin inline-block w-4 h-4 border-1 rounded-full"
+               role="status"
+            >
+               <span class="visually-hidden">Loading...</span>
+            </div>
+            <p className="pl-2">Pending</p>
+         </div>,
+         {
+            hideProgressBar: true,
+         }
+      );
       setFilled(true);
 
       emailjs
@@ -24,9 +40,14 @@ const ContactMe = () => {
             (result) => {
                e.target.reset();
                setFilled(false);
+               toast.dismiss(toastId.current);
+               toast.success("Sending Email Successful");
             },
             (error) => {
-               console.log(error.text);
+               e.target.reset();
+               setFilled(false);
+               toast.dismiss(toastId.current);
+               toast.error("Sending Email Failed. Please Try Again");
             }
          );
    };
@@ -159,6 +180,7 @@ const ContactMe = () => {
                   Copyright {new Date().getFullYear()}. All rights reserved
                </p>
             </div>
+            <ToastContainer position="top-center" theme="dark" />
          </div>
       </div>
    );
