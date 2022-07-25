@@ -17,7 +17,7 @@ const Banner = () => {
             <p className="text-5xl md:text-8xl text-green-500">
                TANVIRUL ISLAM
             </p>
-            <p className="text-2xl md:text-3xl">JUNIOR Full Stack DEVELOPER</p>
+            <p className="text-2xl md:text-3xl">JUNIOR FULL STACK DEVELOPER</p>
             <a
                type="button"
                data-mdb-ripple="true"
