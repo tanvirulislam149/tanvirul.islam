@@ -45,33 +45,34 @@ const ProjectDetails = () => {
          </div>
          <div>
             <div className="py-20 md:px-5 flex justify-center">
-               <button
+               <a
                   type="button"
-                  class="p-3 py-0 bg-green-500 border-2 border-green-500 text-black font-medium md:text-lg banner-font leading-tight uppercase rounded shadow-md hover:bg-black hover:text-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"
+                  class="p-3 pt-3 bg-green-500 border-2 border-green-500 text-black font-medium md:text-lg banner-font leading-tight uppercase rounded shadow-md hover:bg-black hover:text-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"
+                  href={clientLink}
+                  target={"blank"}
                >
-                  <a href={clientLink} target={"blank"}>
-                     Client-side Code
-                  </a>
-               </button>{" "}
+                  {/* <a>Client-side Code</a> */}
+                  Client-side Code
+               </a>{" "}
                <br />
-               <button
+               <a
                   type="button"
                   class="md:my-0 mx-3 md:mx-10 p-3 bg-green-500 border-2 border-green-500 text-black font-medium md:text-lg banner-font leading-tight uppercase rounded shadow-md hover:bg-black hover:text-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"
+                  href={serverLink}
+                  target={"blank"}
                >
                   {" "}
-                  <a href={serverLink} target={"blank"}>
-                     Server-side Code
-                  </a>
-               </button>{" "}
+                  Server-side Code
+               </a>{" "}
                <br />
-               <button
+               <a
                   type="button"
                   class=" p-3 bg-green-500 border-2 border-green-500 text-black font-medium md:text-lg banner-font leading-tight uppercase rounded shadow-md hover:bg-black hover:text-white hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"
+                  href={SiteLink}
+                  target={"blank"}
                >
-                  <a href={SiteLink} target={"blank"}>
-                     Live-Site Link
-                  </a>
-               </button>{" "}
+                  Live-Site Link
+               </a>{" "}
                <br />
             </div>
          </div>
@@ -88,24 +89,9 @@ const ProjectDetails = () => {
                FEATURES
             </p>
             <div className="text-xl px-5 md:w-4/6 banner-font">
-               <li className="flex justify-start">
-                  <p>
-                     <span className="font-bold">--</span>
-                     {features[0]}
-                  </p>
-               </li>
-               <li className="flex justify-start">
-                  <p>
-                     <span className="font-bold">--</span>
-                     {features[1]}
-                  </p>
-               </li>
-               <li className="flex justify-start">
-                  <p>
-                     <span className="font-bold">--</span>
-                     {features[2]}
-                  </p>
-               </li>
+               <li>{features[0]}</li>
+               <li>{features[1]}</li>
+               <li>{features[2]}</li>
             </div>
          </div>
          <div className="md:flex justify-between py-20">
