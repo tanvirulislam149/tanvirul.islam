@@ -31,7 +31,7 @@ const Skills = () => {
                initial={{ opacity: 0 }}
                whileInView={{ opacity: 1 }}
                viewport={{ once: true, amount: 0 }}
-               transition={{ delay: 0.8, duration: 1 }}
+               transition={{ delay: 0.1, duration: 1 }}
                className="drop-shadow-lg w-24 mx-auto"
                src={javascript}
                alt=""
@@ -40,7 +40,7 @@ const Skills = () => {
                initial={{ opacity: 0 }}
                whileInView={{ opacity: 1 }}
                viewport={{ once: true, amount: 0 }}
-               transition={{ delay: 0.5, duration: 1 }}
+               transition={{ delay: 0.2, duration: 1 }}
                className="drop-shadow-lg w-32 mx-auto"
                src={react}
                alt=""
@@ -49,7 +49,7 @@ const Skills = () => {
                initial={{ opacity: 0 }}
                whileInView={{ opacity: 1 }}
                viewport={{ once: true, amount: 0 }}
-               transition={{ delay: 0.7, duration: 1 }}
+               transition={{ delay: 0.3, duration: 1 }}
                className="drop-shadow-lg w-20 mx-auto"
                src={html}
                alt=""
@@ -58,7 +58,7 @@ const Skills = () => {
                initial={{ opacity: 0 }}
                whileInView={{ opacity: 1 }}
                viewport={{ once: true, amount: 0 }}
-               transition={{ delay: 0.2, duration: 1 }}
+               transition={{ delay: 0.4, duration: 1 }}
                className="drop-shadow-lg w-20 mx-auto"
                src={css}
                alt=""
@@ -67,7 +67,7 @@ const Skills = () => {
                initial={{ opacity: 0 }}
                whileInView={{ opacity: 1 }}
                viewport={{ once: true, amount: 0 }}
-               transition={{ delay: 0, duration: 1 }}
+               transition={{ delay: 0.5, duration: 1 }}
                className="drop-shadow-lg w-52 my-auto mx-auto"
                src={tailwind}
                alt=""
@@ -76,7 +76,7 @@ const Skills = () => {
                initial={{ opacity: 0 }}
                whileInView={{ opacity: 1 }}
                viewport={{ once: true, amount: 0 }}
-               transition={{ delay: 0.3, duration: 1 }}
+               transition={{ delay: 0.6, duration: 1 }}
                className="drop-shadow-lg w-32 my-auto mx-auto"
                src={bootstrap}
                alt=""
@@ -85,7 +85,7 @@ const Skills = () => {
                initial={{ opacity: 0 }}
                whileInView={{ opacity: 1 }}
                viewport={{ once: true, amount: 0 }}
-               transition={{ delay: 0.9, duration: 1 }}
+               transition={{ delay: 0.7, duration: 1 }}
                className="drop-shadow-lg w-52 my-auto mx-auto"
                src={firebase}
                alt=""
@@ -94,7 +94,7 @@ const Skills = () => {
                initial={{ opacity: 0 }}
                whileInView={{ opacity: 1 }}
                viewport={{ once: true, amount: 0 }}
-               transition={{ delay: 1, duration: 1 }}
+               transition={{ delay: 0.8, duration: 1 }}
                className="drop-shadow-lg w-28 my-auto mx-auto"
                src={node}
                alt=""
@@ -103,7 +103,7 @@ const Skills = () => {
                initial={{ opacity: 0 }}
                whileInView={{ opacity: 1 }}
                viewport={{ once: true, amount: 0 }}
-               transition={{ delay: 0.2, duration: 1 }}
+               transition={{ delay: 0.9, duration: 1 }}
                className="drop-shadow-lg w-56 my-auto mx-auto"
                src={express}
                alt=""
@@ -112,7 +112,7 @@ const Skills = () => {
                initial={{ opacity: 0 }}
                whileInView={{ opacity: 1 }}
                viewport={{ once: true, amount: 0 }}
-               transition={{ delay: 0.6, duration: 1 }}
+               transition={{ delay: 1, duration: 1 }}
                className="drop-shadow-lg w-56 my-auto mx-auto"
                src={mongodb}
                alt=""
@@ -121,7 +121,7 @@ const Skills = () => {
                initial={{ opacity: 0 }}
                whileInView={{ opacity: 1 }}
                viewport={{ once: true, amount: 0 }}
-               transition={{ delay: 0.3, duration: 1 }}
+               transition={{ delay: 1.1, duration: 1 }}
                className="drop-shadow-lg w-32 my-auto mx-auto"
                src={stripe}
                alt=""
@@ -130,7 +130,7 @@ const Skills = () => {
                initial={{ opacity: 0 }}
                whileInView={{ opacity: 1 }}
                viewport={{ once: true, amount: 0 }}
-               transition={{ delay: 0.9, duration: 1 }}
+               transition={{ delay: 1.2, duration: 1 }}
                className="drop-shadow-lg w-36 my-auto mx-auto"
                src={axios}
                alt=""
