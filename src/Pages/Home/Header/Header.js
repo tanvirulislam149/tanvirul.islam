@@ -28,22 +28,21 @@ const Header = () => {
         justify-between
         text-white
         navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid w-full flex flex-wrap items-center justify-between bg-black md:bg-transparent pb-0 pr-4">
+        <div class="container-fluid w-full flex flex-wrap items-center justify-between md:bg-transparent pb-0 pr-0">
           <Link to="/">
             <div className='flex items-end bg-black md:pl-5 md:pr-5 pr-1 md:pb-2 pb-1 pt-1'>
               <img className='w-12 md:w-16 bg-black' src={pic} alt='' />
               <p className='text-3xl md:text-5xl font-bold'>ANVIR</p>
             </div>
           </Link>
-          <button class="
+          <button class={`pr-4 ${navbar ? "text-black" : "text-white"}
             navbar-toggler
-            text-white
             border-0
             hover:shadow-none hover:no-underline
             py-2
             px-2.5
             bg-transparent
-            focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
               class="w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -53,17 +52,17 @@ const Header = () => {
             </svg>
           </button>
           <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
-            <ul class="navbar-nav flex flex-col list-style-none ml-auto">
-              <li class="nav-item px-4 mx-auto py-0 md:border-r-2 border-blue-200">
+            <ul class="navbar-nav bg-black mt-2 flex flex-col list-style-none ml-auto">
+              <li class="nav-item px-4 mx-auto pb-2 md:pb-0 pt-2 md:pt-2 md:border-r-2 border-blue-200">
                 <Link to="/home" className='nav-link text-white text-lg'>Home</Link>
               </li>
-              <li class="nav-item px-4 mx-auto py-0 md:border-r-2 border-blue-200">
+              <li class="nav-item px-4 mx-auto pb-2 md:pb-0 md:border-r-2 border-blue-200">
                 <Link to="/blogs" className='nav-link text-white text-lg'>Blogs</Link>
               </li>
-              <li class="nav-item px-4 mx-auto py-0 md:border-r-2 border-blue-200">
+              <li class="nav-item px-4 mx-auto pb-2 md:pb-0 md:border-r-2 border-blue-200">
                 <a className='nav-link text-white text-lg' href="#aboutMe">About</a>
               </li>
-              <li class="nav-item px-4 mx-auto py-0">
+              <li class="nav-item px-4 mx-auto pb-2 md:pb-0">
                 <a className='nav-link text-white text-lg' href="#contactMe">Contact</a>
               </li>
 
