@@ -24,7 +24,7 @@ const Banner = () => {
           type="button"
           data-mdb-ripple="true"
           data-mdb-ripple-color="light"
-          className="text-lg inline-block px-6 my-4 nav-transition pt-3 pb-2 bg-black hover:text-black text-white font-medium leading-tight uppercase rounded shadow-md hover:bg-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-black  active:shadow-lg transition duration-150 ease-in-out"
+          className="text-lg inline-block px-6 my-4 nav-transition pt-3 pb-2 bg-black hover:text-black text-white font-medium leading-tight uppercase rounded shadow-md hover:bg-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out active:bg-sky-500"
           href="https://drive.google.com/file/d/1xtZt-wI5v3mjx1y_tmLLntqgv5fLlkC7/view?usp=sharing"
           target={"blank"}
         >
@@ -40,7 +40,7 @@ const Banner = () => {
         <div className="flex justify-center pt-7">
           <a
             type="button"
-            class="p-3  bg-black border-2 border-sky-500 nav-transition text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-sky-500 hover:text-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+            class="p-3  bg-black border-2 border-sky-500 nav-transition text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-sky-500 hover:text-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-sky-500 active:shadow-lg transition duration-150 ease-in-out"
             href="https://www.facebook.com/md.tanvirul.islam.792/"
             target={"blank"}
           >
@@ -49,7 +49,7 @@ const Banner = () => {
           <br />
           <a
             type="button"
-            class="md:my-0 mx-5 p-3 bg-black border-2 border-sky-500 nav-transition text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-sky-500 hover:text-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"
+            class="md:my-0 mx-5 p-3 bg-black border-2 border-sky-500 nav-transition text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-sky-500 hover:text-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg  active:bg-sky-500 transition duration-150 ease-in-out"
             href="https://github.com/tanvirulislam149"
             target={"blank"}
           >
@@ -58,7 +58,7 @@ const Banner = () => {
           <br />
           <a
             type="button"
-            class="p-3 bg-black border-2 border-sky-500 nav-transition text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-sky-500 hover:text-white hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+            class="p-3 bg-black border-2 border-sky-500 nav-transition text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-sky-500 hover:text-white hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-sky-500 active:shadow-lg transition duration-150 ease-in-out"
             href="https://www.linkedin.com/in/tanvirul-islam-0242b4241"
             target={"blank"}
           >
