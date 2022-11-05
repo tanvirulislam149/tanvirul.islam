@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 
 const AboutMe = () => {
   return (
-    <div className="md:flex overflow-hidden justify-around py-28">
-      <div className="w-4/12">
+    <div className="md:flex overflow-hidden justify-around md:py-28 px-4 py-12">
+      <div className="md:w-4/12">
         <motion.div
           initial={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -42,7 +42,7 @@ const AboutMe = () => {
           </div>
         </motion.div>
       </div>
-      <div className="w-4/12">
+      <div className="md:w-4/12">
         <motion.img
           initial={{ x: 200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
