@@ -13,10 +13,10 @@ const Banner = () => {
     >
       <div>
         {/* <p className="text-2xl md:text-6xl">HELLO, I AM</p> */}
-        <p className="text-6xl md:text-8xl lg:text-9xl text-black">
+        <p className="text-7xl md:text-8xl lg:text-9xl text-black">
           TANVIRUL
         </p>
-        <p className="text-6xl md:text-8xl lg:text-9xl text-black">
+        <p className="text-7xl md:text-8xl lg:text-9xl text-black">
           ISLAM
         </p>
         <p className="text-2xl md:text-5xl">FULL STACK DEVELOPER</p>
@@ -31,12 +31,13 @@ const Banner = () => {
           My Resume
         </a>
       </div>
-      <div className="flex justify-end xl:pr-20">
+      <div className="flex justify-end pt-20 md:pt-0 xl:pr-20">
         <div>
           <div className="pt-10 md:w-96 text-right">
             <p className="text-4xl md:text-6xl pr-20">Hello!!</p>
             <p className="text-5xl pr-10">.........</p>
-            <p className="text-2xl md:text-3xl text-sky-500 md:pt-7 pt-2">A full stack developer who loves to build websites</p>
+            <p className="text-2xl md:text-3xl text-sky-500 md:pt-7 pt-2">A full stack developer</p>
+            <p className="text-2xl md:text-3xl text-sky-500">who loves to build websites</p>
           </div>
           <div className="flex justify-center pt-7">
             <a

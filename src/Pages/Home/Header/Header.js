@@ -53,16 +53,16 @@ const Header = () => {
           </button>
           <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
             <ul class="navbar-nav bg-black md:bg-transparent mt-2 flex flex-col list-style-none ml-auto">
-              <li class="nav-item px-4 mx-auto pb-2 md:pb-0 pt-2 md:pt-0 md:border-r-2 border-blue-200">
+              <li class="nav-item px-4 mx-auto pb-2 md:pb-0 pt-2 md:pt-0 md:border-r-2 border-b-2 md:border-b-0 w-full text-center border-blue-200">
                 <Link to="/home" className='nav-link text-white text-lg'>Home</Link>
               </li>
-              <li class="nav-item px-4 mx-auto pb-2 md:pb-0 md:border-r-2 border-blue-200">
+              <li class="nav-item px-4 mx-auto pb-2 md:pb-0 md:border-r-2 border-b-2 md:border-b-0 w-full text-center border-blue-200">
                 <Link to="/blogs" className='nav-link text-white text-lg'>Blogs</Link>
               </li>
-              <li class="nav-item px-4 mx-auto pb-2 md:pb-0 md:border-r-2 border-blue-200">
+              <li class="nav-item px-4 mx-auto pb-2 md:pb-0 md:border-r-2 border-b-2 md:border-b-0 w-full text-center border-blue-200">
                 <a className='nav-link text-white text-lg' href="#aboutMe">About</a>
               </li>
-              <li class="nav-item px-4 mx-auto pb-2 md:pb-0">
+              <li class="nav-item px-4 mx-auto pb-2 w-full text-center md:pb-0">
                 <a className='nav-link text-white text-lg' href="#contactMe">Contact</a>
               </li>
 
