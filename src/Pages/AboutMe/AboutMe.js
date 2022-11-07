@@ -47,7 +47,7 @@ const AboutMe = () => {
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0 }}
           transition={{ duration: 0.7 }}
-          style={{ border: "16px rgb(14 165 233) solid", borderRadius: "10px" }}
+          style={{ border: "16px rgb(14 165 233) solid", borderRadius: "25px" }}
           className="md:w-11/12"
           src="https://i.ibb.co/D7msbHw/aboutme.jpg"
           alt=""
