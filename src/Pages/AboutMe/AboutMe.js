@@ -23,7 +23,6 @@ const AboutMe = () => {
               <div className="mr-2 rounded-full bg-sky-500 h-5 w-5"></div>
               <div className="mr-2 rounded-full bg-sky-500 h-5 w-5"></div>
               <div className="mr-2 rounded-full bg-sky-500 h-5 w-5"></div>
-              <div className="mr-2 rounded-full bg-sky-500 h-5 w-5"></div>
             </div>
             <p className="text-xl py-5">
               Hello! I am Tanvirul Islam from Chattogram, Bangladesh

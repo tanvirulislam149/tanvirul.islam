@@ -26,7 +26,6 @@ const Skills = () => {
           <div className="mr-2 rounded-full bg-sky-500 h-5 w-5"></div>
           <div className="mr-2 rounded-full bg-sky-500 h-5 w-5"></div>
           <div className="mr-2 rounded-full bg-sky-500 h-5 w-5"></div>
-          <div className="mr-2 rounded-full bg-sky-500 h-5 w-5"></div>
         </div>
       </div>
       <div className="grid md:grid-cols-4 grid-cols-2 gap-4 bg-green-100 p-5 rounded-xl">
