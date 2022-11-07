@@ -9,7 +9,7 @@ const Banner = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.2 }}
-      className="banner-bg md:pt-40 pt-32 px-6 md:flex lg:px-10 banner-font"
+      className="banner-bg md:pt-40 pt-32 px-6 lg:flex justify-between lg:px-10 banner-font"
     >
       <div>
         {/* <p className="text-2xl md:text-6xl">HELLO, I AM</p> */}
@@ -31,40 +31,42 @@ const Banner = () => {
           My Resume
         </a>
       </div>
-      <div className="mx-auto md:pl-20">
-        <div className="pt-10 md:w-96 text-right">
-          <p className="text-4xl md:text-6xl pr-20">Hello!!</p>
-          <p className="text-5xl pr-10">.........</p>
-          <p className="text-2xl md:text-3xl text-sky-500 md:pt-7 pt-2">A full stack developer who loves to build websites</p>
-        </div>
-        <div className="flex justify-center pt-7">
-          <a
-            type="button"
-            class="p-3  bg-black border-2 border-sky-500 nav-transition text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-sky-500 hover:text-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-sky-500 active:shadow-lg transition duration-150 ease-in-out"
-            href="https://www.facebook.com/md.tanvirul.islam.792/"
-            target={"blank"}
-          >
-            <FaFacebookF className="h-6 w-6" />
-          </a>{" "}
-          <br />
-          <a
-            type="button"
-            class="md:my-0 mx-5 p-3 bg-black border-2 border-sky-500 nav-transition text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-sky-500 hover:text-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg  active:bg-sky-500 transition duration-150 ease-in-out"
-            href="https://github.com/tanvirulislam149"
-            target={"blank"}
-          >
-            <FaGithub className="h-6 w-6" />
-          </a>{" "}
-          <br />
-          <a
-            type="button"
-            class="p-3 bg-black border-2 border-sky-500 nav-transition text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-sky-500 hover:text-white hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-sky-500 active:shadow-lg transition duration-150 ease-in-out"
-            href="https://www.linkedin.com/in/tanvirul-islam-0242b4241"
-            target={"blank"}
-          >
-            <FaLinkedinIn className="h-6 w-6" />
-          </a>
-          <br />
+      <div className="flex justify-end xl:pr-20">
+        <div>
+          <div className="pt-10 md:w-96 text-right">
+            <p className="text-4xl md:text-6xl pr-20">Hello!!</p>
+            <p className="text-5xl pr-10">.........</p>
+            <p className="text-2xl md:text-3xl text-sky-500 md:pt-7 pt-2">A full stack developer who loves to build websites</p>
+          </div>
+          <div className="flex justify-center pt-7">
+            <a
+              type="button"
+              class="p-3  bg-black border-2 border-sky-500 nav-transition text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-sky-500 hover:text-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-sky-500 active:shadow-lg transition duration-150 ease-in-out"
+              href="https://www.facebook.com/md.tanvirul.islam.792/"
+              target={"blank"}
+            >
+              <FaFacebookF className="h-6 w-6" />
+            </a>{" "}
+            <br />
+            <a
+              type="button"
+              class="md:my-0 mx-5 p-3 bg-black border-2 border-sky-500 nav-transition text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-sky-500 hover:text-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg  active:bg-sky-500 transition duration-150 ease-in-out"
+              href="https://github.com/tanvirulislam149"
+              target={"blank"}
+            >
+              <FaGithub className="h-6 w-6" />
+            </a>{" "}
+            <br />
+            <a
+              type="button"
+              class="p-3 bg-black border-2 border-sky-500 nav-transition text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-sky-500 hover:text-white hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-sky-500 active:shadow-lg transition duration-150 ease-in-out"
+              href="https://www.linkedin.com/in/tanvirul-islam-0242b4241"
+              target={"blank"}
+            >
+              <FaLinkedinIn className="h-6 w-6" />
+            </a>
+            <br />
+          </div>
         </div>
       </div>
     </motion.div>
