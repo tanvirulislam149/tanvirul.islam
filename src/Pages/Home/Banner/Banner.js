@@ -9,7 +9,7 @@ const Banner = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.2 }}
-      className="banner-bg md:pt-40 pt-32 px-6 lg:flex justify-between lg:px-10 banner-font"
+      className="banner-bg md:pt-40 pt-32 pl-2 pr-6 lg:flex justify-between lg:px-10 banner-font"
     >
       <div>
         {/* <p className="text-2xl md:text-6xl">HELLO, I AM</p> */}
@@ -31,13 +31,13 @@ const Banner = () => {
           My Resume
         </a>
       </div>
-      <div className="flex justify-end pt-20 md:pt-0 xl:pr-20">
+      <div className="flex justify-end pt-10 md:pt-0 xl:pr-20">
         <div>
           <div className="pt-10 md:w-96 text-right">
             <p className="text-4xl md:text-6xl pr-20">Hello!!</p>
             <p className="text-5xl pr-10">.........</p>
-            <p className="text-2xl md:text-3xl text-sky-500 md:pt-7 pt-2">A full stack developer</p>
-            <p className="text-2xl md:text-3xl text-sky-500">who loves to build websites</p>
+            <p className="text-2xl md:text-4xl banner-font2 font-bold text-sky-500 md:pt-7 pt-2">A full stack developer</p>
+            <p className="text-2xl md:text-4xl banner-font2 font-bold text-sky-500">who loves to build websites</p>
           </div>
           <div className="flex justify-center pt-7">
             <a
