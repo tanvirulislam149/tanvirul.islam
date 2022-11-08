@@ -58,7 +58,7 @@ const ContactMe = () => {
   };
 
   return (
-    <div id="contactMe" className="">
+    <div id="contactMe" className="mb-20">
       <div className="mt-10 text-center ">
         <p className="banner-font md:text-7xl text-5xl text-sky-500">
           GET IN TOUCH
@@ -109,11 +109,11 @@ const ContactMe = () => {
             </div>
           </div>
         </div>
-        <div className="md:w-8/12 w-full mt-20 border-sky-900 border-2 rounded-lg p-4 md:ml-10 md:mr-20 md:mt-0 text-black">
+        <div className="md:w-8/12 w-full mt-20 border-sky-900 border-2 rounded-lg bg-gray-900 p-4 md:ml-10 md:mr-20 md:mt-0 text-white">
           <form ref={form} onSubmit={sendEmail}>
             <p className="text-sky-200">Name</p>
             <input
-              className="my-2 rounded-md w-full bg-black border-2 border-sky-900 px-4 py-2"
+              className="my-2 rounded-md w-full  border-2  border-sky-900 px-4 py-2 bg-black"
               required
               placeholder="Enter Your Name"
               type="text"
@@ -145,7 +145,7 @@ const ContactMe = () => {
               placeholder="Enter Your Message"
               name="message"
               cols="30"
-              rows="7"
+              rows="5"
             ></textarea>{" "}
             <br />
             <input
@@ -154,37 +154,6 @@ const ContactMe = () => {
               value="Send Email"
             />
           </form>
-        </div>
-      </div>
-
-      <div className="relative">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#4caf50"
-            fill-opacity="1"
-            d="M0,32L48,64C96,96,192,160,288,165.3C384,171,480,117,576,85.3C672,53,768,43,864,69.3C960,96,1056,160,1152,160C1248,160,1344,96,1392,64L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-          ></path>
-        </svg>
-        <div className="absolute bottom-2 invisible md:visible md:left-1/3">
-          <div className="flex pb-6">
-            <img className="bg-black w-24" src={logo} alt="" />
-            <div className="banner-font text-black pl-5">
-              <p className="text-4xl">Tanvirul Islam</p>
-              <p className="text-2xl">
-                A professional frontend developer
-              </p>
-            </div>
-          </div>
-          <p className="text-font text-black flex">
-            <FaCopyright className="my-auto mr-1" />
-            Copyright {new Date().getFullYear()}. All rights reserved
-          </p>
-        </div>
-        <div className="absolute bottom-2 left-5 visible md:invisible">
-          <p className="text-font text-black flex">
-            <FaCopyright className="my-auto mr-1" />
-            Copyright {new Date().getFullYear()}. All rights reserved
-          </p>
         </div>
         <ToastContainer position="top-center" theme="dark" />
       </div>
