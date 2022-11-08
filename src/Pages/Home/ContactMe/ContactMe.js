@@ -71,8 +71,8 @@ const ContactMe = () => {
           <div className="mr-2 rounded-full bg-sky-500 h-5 w-5"></div>
         </div>
       </div>
-      <div className="md:flex justify-center pb-6">
-        <div className="mx-3 w-full md:mx-10 md:pl-10">
+      <div className="md:flex justify-center p-2 pb-6">
+        <div className="md:w-7/12 w-full md:mx-10 md:pl-10">
           <p className="text-3xl font-semibold">Contact Information</p>
           <p className="text-xl font-semibold text-slate-400 py-2">I am ready to discuss anything in person</p>
           <div>
@@ -82,7 +82,7 @@ const ContactMe = () => {
               </div>
               <div className="ml-5">
                 <p className="text-xl font-semibold">Contact on phone</p>
-                <p className="text-xl text-slate-400">+8801553514065</p>
+                <p className="md:text-xl text-lg text-slate-400">+8801553514065</p>
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@ const ContactMe = () => {
               </div>
               <div className="ml-5">
                 <p className="text-xl font-semibold">Contact on mail</p>
-                <p className="text-xl text-slate-400">tanvirulislam149@gmail.com</p>
+                <p className="md:text-xl text-lg text-slate-400">tanvirulislam149@gmail.com</p>
               </div>
             </div>
           </div>
@@ -104,48 +104,52 @@ const ContactMe = () => {
               </div>
               <div className="ml-5">
                 <p className="text-xl font-semibold">Contact address</p>
-                <p className="text-xl text-slate-400">Chattogram, Bangladesh</p>
+                <p className="md:text-xl text-lg text-slate-400">Chattogram, Bangladesh</p>
               </div>
             </div>
           </div>
         </div>
-        <div className="w-full mt-20 md:mt-0 text-black">
+        <div className="md:w-8/12 w-full mt-20 border-sky-900 border-2 rounded-lg p-4 md:ml-10 md:mr-20 md:mt-0 text-black">
           <form ref={form} onSubmit={sendEmail}>
+            <p className="text-sky-200">Name</p>
             <input
-              className="my-2 rounded-md md:w-96 w-full px-4 py-2"
+              className="my-2 rounded-md w-full bg-black border-2 border-sky-900 px-4 py-2"
               required
-              placeholder="Your Name"
+              placeholder="Enter Your Name"
               type="text"
               name="user_name"
             />{" "}
             <br />
+            <p className="text-sky-200">Email</p>
             <input
-              className="my-2 rounded-md md:w-96 w-full px-4 py-2"
+              className="my-2 rounded-md w-full bg-black border-2 border-sky-900 px-4 py-2"
               required
-              placeholder="Your Email"
+              placeholder="Enter Your Email"
               type="email"
               name="user_email"
             />{" "}
             <br />
+            <p className="text-sky-200">Subject</p>
             <input
-              className="my-2 rounded-md md:w-96 w-full px-4 py-2"
+              className="my-2 rounded-md w-full bg-black border-2 border-sky-900 px-4 py-2"
               required
-              placeholder="Subject"
+              placeholder="Enter Subject"
               type="text"
               name="subject"
             />{" "}
             <br />
+            <p className="text-sky-200">Message</p>
             <textarea
-              className=" my-2 rounded-md md:w-96 w-full px-4 py-2"
+              className=" my-2 rounded-md w-full bg-black border-2 border-sky-900 px-4 py-2"
               required
-              placeholder="Your Message"
+              placeholder="Enter Your Message"
               name="message"
               cols="30"
-              rows="10"
+              rows="7"
             ></textarea>{" "}
             <br />
             <input
-              className="cursor-pointer bg-green-500 text-black font-bold text-xl my-2 rounded-md w-42 px-4 py-2"
+              className="cursor-pointer bg-sky-400 text-black font-bold text-xl my-2 rounded-md w-42 px-4 py-2"
               type="submit"
               value="Send Email"
             />
