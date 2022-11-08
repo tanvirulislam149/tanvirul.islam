@@ -36,8 +36,8 @@ const Banner = () => {
           <div className="pt-10 md:w-96 text-right">
             <p className="text-4xl md:text-6xl pr-20">Hello!!</p>
             <p className="text-5xl pr-10">.........</p>
-            <p className="text-2xl md:text-4xl banner-font2 font-bold text-sky-500 md:pt-7 pt-2">A full stack developer</p>
-            <p className="text-2xl md:text-4xl banner-font2 font-bold text-sky-500">who loves to build websites</p>
+            <p className="text-4xl banner-font2 font-bold text-sky-500 md:pt-7 pt-2">A full stack developer</p>
+            <p className="text-4xl banner-font2 font-bold text-sky-500">who loves to build websites</p>
           </div>
           <div className="flex justify-center pt-7">
             <a

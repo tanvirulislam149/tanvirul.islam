@@ -34,7 +34,7 @@ const Projects = () => {
         transition={{ duration: 0.7 }}
       >
         <img className="md:w-7/12 w-full" src={car} alt="" />
-        <div className="bg-sky-400 w-full md:w-1/2 flex flex-col justify-center">
+        <div className="bg-gray-900 text-sky-500 w-full md:w-1/2 flex flex-col justify-center">
           <p className="text-3xl font-extrabold banner-font text-center py-6">
             AUTOPARTS INDUSTRIES LTD.
           </p>
@@ -58,7 +58,7 @@ const Projects = () => {
               </p>
             </a>
             <button
-              className="border-2 border-black hover:bg-black hover:text-white my-6 font-bold px-5"
+              className="border-2 border-sky-500 hover:bg-black hover:text-white my-6 font-bold px-5"
               onClick={() => goToDetails(1)}
             >
               Details
@@ -74,7 +74,7 @@ const Projects = () => {
         transition={{ duration: 0.7 }}
       >
         <img className="md:w-7/12 w-full" src={depot} alt="" />
-        <div className="bg-sky-400 w-full md:w-1/2 flex flex-col justify-center">
+        <div className="bg-gray-900 text-sky-500 w-full md:w-1/2 flex flex-col justify-center">
           <p className="text-3xl font-extrabold banner-font text-center py-6">
             DEPOT WAREHOUSE COMPANY
           </p>
@@ -97,7 +97,7 @@ const Projects = () => {
               </p>
             </a>
             <button
-              className="border-2 border-black hover:bg-black hover:text-white my-6 font-bold px-5"
+              className="border-2 border-sky-500 hover:bg-black hover:text-white my-6 font-bold px-5"
               onClick={() => goToDetails(2)}
             >
               Details
@@ -113,7 +113,7 @@ const Projects = () => {
         transition={{ duration: 0.7 }}
       >
         <img className="md:w-7/12 w-full" src={dentcare} alt="" />
-        <div className="w-full md:w-1/2 bg-sky-400 flex flex-col justify-center">
+        <div className="w-full md:w-1/2 bg-gray-900 text-sky-500 flex flex-col justify-center">
           <p className="text-3xl font-extrabold banner-font text-center py-6">
             DENTCARE PRIVATE LTD.
           </p>
@@ -134,7 +134,7 @@ const Projects = () => {
               </p>
             </a>
             <button
-              className="border-2 border-black hover:bg-black hover:text-white my-6 font-bold px-5"
+              className="border-2 border-sky-500 hover:bg-black hover:text-white my-6 font-bold px-5"
               onClick={() => goToDetails(3)}
             >
               Details
