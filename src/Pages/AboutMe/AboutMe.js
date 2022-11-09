@@ -28,7 +28,7 @@ const AboutMe = () => {
               Hello! I am Tanvirul Islam from Chattogram, Bangladesh
             </p>
             <p>
-              I am a Frontend Web Developer specializing in React. I have
+              I am a full stack Web Developer specializing in React and Nextjs. I have
               extensive skill in developing and deploying websites utilizing
               various open source packages. I also specialize in JavaScript,
               Bootstrap, Tailwind and have some projects done with these. In
