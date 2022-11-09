@@ -29,11 +29,6 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.typing::before {
-  content: "Tanvirul Islam";
-  animation: typing 3s linear infinite;
-}
-
 .bg-video {
   position: absolute;
   top: 0;
