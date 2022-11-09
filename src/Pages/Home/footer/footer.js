@@ -4,9 +4,9 @@ import { FaFacebookF, FaGithub, FaLinkedinIn } from 'react-icons/fa'
 const Footer = () => {
   return (
     <div>
-      <footer class="md:flex bg-gray-900 justify-between px-20 items-center text-white" style={{ backgroundColor: "rgba(17, 24, 39)" }}>
+      <footer class="md:flex bg-gray-900 justify-between md:px-20 items-center text-white" style={{ backgroundColor: "rgba(17, 24, 39)" }}>
         {/* <div class="container px-6 pt-6"> */}
-        <div class="flex justify-center my-3">
+        <div class="flex justify-center py-3">
           <a
             type="button"
             class="p-3  bg-black border-2 border-sky-500 nav-transition text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-sky-500 hover:text-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-sky-500 active:shadow-lg transition duration-150 ease-in-out"
@@ -36,7 +36,7 @@ const Footer = () => {
           {/* </div> */}
         </div>
 
-        <div class=" p-0">
+        <div class="text-center pb-2">
           © {new Date().getFullYear()} Copyright Tanvirul Islam. All rights reserved
         </div>
       </footer>
