@@ -12,6 +12,10 @@ import mongodb from "../../Images/mongodb.svg";
 import stripe from "../../Images/stripe.png";
 import axios from "../../Images/axios.svg";
 import { motion } from "framer-motion";
+import next from "../../Images/Nextjs-logo.svg-removebg-preview.png"
+import redux from "../../Images/redux-removebg-preview.png"
+import nextAuth from "../../Images/nauth-removebg-preview.png"
+import mui from "../../Images/mui-removebg-preview.png"
 
 const Skills = () => {
   return (
@@ -52,6 +56,33 @@ const Skills = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0 }}
           transition={{ delay: 0.3, duration: 1 }}
+          className="drop-shadow-lg w-36 my-auto mx-auto"
+          src={next}
+          alt=""
+        />
+        <motion.img
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0 }}
+          transition={{ delay: 0.4, duration: 1 }}
+          className="drop-shadow-lg w-24 my-auto mx-auto"
+          src={nextAuth}
+          alt=""
+        />
+        <motion.img
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0 }}
+          transition={{ delay: 0.5, duration: 1 }}
+          className="drop-shadow-lg w-24 my-auto mx-auto"
+          src={redux}
+          alt=""
+        />
+        <motion.img
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0 }}
+          transition={{ delay: 0.6, duration: 1 }}
           className="drop-shadow-lg w-20 mx-auto"
           src={html}
           alt=""
@@ -60,7 +91,7 @@ const Skills = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0 }}
-          transition={{ delay: 0.4, duration: 1 }}
+          transition={{ delay: 0.7, duration: 1 }}
           className="drop-shadow-lg w-20 mx-auto"
           src={css}
           alt=""
@@ -69,7 +100,16 @@ const Skills = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0 }}
-          transition={{ delay: 0.5, duration: 1 }}
+          transition={{ delay: 0.8, duration: 1 }}
+          className="drop-shadow-lg w-24 my-auto mx-auto"
+          src={mui}
+          alt=""
+        />
+        <motion.img
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0 }}
+          transition={{ delay: 0.9, duration: 1 }}
           className="drop-shadow-lg w-52 my-auto mx-auto"
           src={tailwind}
           alt=""
@@ -78,7 +118,7 @@ const Skills = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0 }}
-          transition={{ delay: 0.6, duration: 1 }}
+          transition={{ delay: 1, duration: 1 }}
           className="drop-shadow-lg w-32 my-auto mx-auto"
           src={bootstrap}
           alt=""
@@ -87,7 +127,7 @@ const Skills = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0 }}
-          transition={{ delay: 0.7, duration: 1 }}
+          transition={{ delay: 1.1, duration: 1 }}
           className="drop-shadow-lg w-52 my-auto mx-auto"
           src={firebase}
           alt=""
@@ -96,7 +136,7 @@ const Skills = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0 }}
-          transition={{ delay: 0.8, duration: 1 }}
+          transition={{ delay: 1.2, duration: 1 }}
           className="drop-shadow-lg w-28 my-auto mx-auto"
           src={node}
           alt=""
@@ -105,7 +145,7 @@ const Skills = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0 }}
-          transition={{ delay: 0.9, duration: 1 }}
+          transition={{ delay: 1.3, duration: 1 }}
           className="drop-shadow-lg w-56 my-auto mx-auto"
           src={express}
           alt=""
@@ -114,7 +154,7 @@ const Skills = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0 }}
-          transition={{ delay: 1, duration: 1 }}
+          transition={{ delay: 1.4, duration: 1 }}
           className="drop-shadow-lg w-56 my-auto mx-auto"
           src={mongodb}
           alt=""
@@ -123,7 +163,7 @@ const Skills = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0 }}
-          transition={{ delay: 1.1, duration: 1 }}
+          transition={{ delay: 1.5, duration: 1 }}
           className="drop-shadow-lg w-32 my-auto mx-auto"
           src={stripe}
           alt=""
@@ -132,11 +172,14 @@ const Skills = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0 }}
-          transition={{ delay: 1.2, duration: 1 }}
+          transition={{ delay: 1.6, duration: 1 }}
           className="drop-shadow-lg w-36 my-auto mx-auto"
           src={axios}
           alt=""
         />
+
+
+
       </div>
     </div>
   );
