@@ -4,7 +4,7 @@ import { FaFacebookF, FaGithub, FaLinkedinIn } from 'react-icons/fa'
 const Footer = () => {
   return (
     <div>
-      <footer class="md:flex bg-gray-900 justify-between md:px-20 items-center text-white" style={{ backgroundColor: "rgba(17, 24, 39)" }}>
+      <footer class="md:flex bg-gray-900 justify-between md:px-20 border-t-2 border-sky-900 items-center text-white" style={{ backgroundColor: "rgba(17, 24, 39)" }}>
         {/* <div class="container px-6 pt-6"> */}
         <div class="flex justify-center py-3">
           <a
