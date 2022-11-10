@@ -41,6 +41,7 @@ const Skills = () => {
           className="drop-shadow-lg w-24 mx-auto"
           src={javascript}
           alt=""
+          title="JavaScript"
         />
         <motion.img
           initial={{ opacity: 0 }}
@@ -50,6 +51,7 @@ const Skills = () => {
           className="drop-shadow-lg w-32 mx-auto"
           src={react}
           alt=""
+          title="React.js"
         />
         <motion.img
           initial={{ opacity: 0 }}
@@ -59,6 +61,7 @@ const Skills = () => {
           className="drop-shadow-lg w-36 my-auto mx-auto"
           src={next}
           alt=""
+          title="Next.js"
         />
         <motion.img
           initial={{ opacity: 0 }}
@@ -68,6 +71,7 @@ const Skills = () => {
           className="drop-shadow-lg w-24 my-auto mx-auto"
           src={nextAuth}
           alt=""
+          title="NextAuth.js"
         />
         <motion.img
           initial={{ opacity: 0 }}
@@ -77,6 +81,7 @@ const Skills = () => {
           className="drop-shadow-lg w-24 my-auto mx-auto"
           src={redux}
           alt=""
+          title="Redux"
         />
         <motion.img
           initial={{ opacity: 0 }}
@@ -86,6 +91,7 @@ const Skills = () => {
           className="drop-shadow-lg w-20 mx-auto"
           src={html}
           alt=""
+          title="HTML"
         />
         <motion.img
           initial={{ opacity: 0 }}
@@ -95,6 +101,7 @@ const Skills = () => {
           className="drop-shadow-lg w-20 mx-auto"
           src={css}
           alt=""
+          title="CSS"
         />
         <motion.img
           initial={{ opacity: 0 }}
@@ -104,6 +111,7 @@ const Skills = () => {
           className="drop-shadow-lg w-24 my-auto mx-auto"
           src={mui}
           alt=""
+          title="Metarial UI"
         />
         <motion.img
           initial={{ opacity: 0 }}
@@ -113,6 +121,7 @@ const Skills = () => {
           className="drop-shadow-lg w-52 my-auto mx-auto"
           src={tailwind}
           alt=""
+          title="Tailwind CSS"
         />
         <motion.img
           initial={{ opacity: 0 }}
@@ -122,6 +131,7 @@ const Skills = () => {
           className="drop-shadow-lg w-32 my-auto mx-auto"
           src={bootstrap}
           alt=""
+          title="Bootstrap"
         />
         <motion.img
           initial={{ opacity: 0 }}
@@ -131,6 +141,7 @@ const Skills = () => {
           className="drop-shadow-lg w-52 my-auto mx-auto"
           src={firebase}
           alt=""
+          title="Firebase"
         />
         <motion.img
           initial={{ opacity: 0 }}
@@ -140,6 +151,7 @@ const Skills = () => {
           className="drop-shadow-lg w-28 my-auto mx-auto"
           src={node}
           alt=""
+          title="Node.js"
         />
         <motion.img
           initial={{ opacity: 0 }}
@@ -149,6 +161,7 @@ const Skills = () => {
           className="drop-shadow-lg w-56 my-auto mx-auto"
           src={express}
           alt=""
+          title="Express.js"
         />
         <motion.img
           initial={{ opacity: 0 }}
@@ -158,6 +171,7 @@ const Skills = () => {
           className="drop-shadow-lg w-56 my-auto mx-auto"
           src={mongodb}
           alt=""
+          title="MongoDB"
         />
         <motion.img
           initial={{ opacity: 0 }}
@@ -167,6 +181,7 @@ const Skills = () => {
           className="drop-shadow-lg w-32 my-auto mx-auto"
           src={stripe}
           alt=""
+          title="Stripe"
         />
         <motion.img
           initial={{ opacity: 0 }}
@@ -176,10 +191,8 @@ const Skills = () => {
           className="drop-shadow-lg w-36 my-auto mx-auto"
           src={axios}
           alt=""
+          title="Axios"
         />
-
-
-
       </div>
     </div>
   );
