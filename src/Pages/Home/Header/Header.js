@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import OffCanvas from './OffCanvas';
 import "./Header.css"
 import { Link } from "react-router-dom";
 import pic from "../../../Images/tanvir.png"
@@ -19,7 +18,7 @@ const Header = () => {
 
 
   return (
-    <div className={`${navbar ? "" : "bg-black"} nav-transition flex justify-between fixed-top px-0 md:px-20`}>
+    <div className={`${navbar ? "" : "bg-black"} nav-transition flex justify-between fixed-top px-5 md:px-20`}>
       <nav class="
         relative
         w-full
@@ -30,18 +29,18 @@ const Header = () => {
         navbar navbar-expand-lg navbar-light">
         <div class="container-fluid w-full flex flex-wrap items-center justify-between md:bg-transparent pb-0 pr-0">
           <Link to="/">
-            <div className='flex items-end bg-black md:pl-5 md:pr-5 pr-1 md:pb-2 pb-1 pt-1'>
-              <img className='w-12 md:w-16 bg-black' src={pic} alt='' />
-              <p className='text-3xl md:text-5xl font-bold'>ANVIR</p>
+            <div className='flex items-end bg-black md:pl-5 md:pr-5 pl-1 pr-1 md:pb-2 pb-1 pt-1'>
+              <img className='w-16 bg-black' src={pic} alt='' />
+              {/* <p className='text-3xl md:text-5xl font-bold'>ANVIR</p> */}
             </div>
           </Link>
-          <button class={`pr-4 ${navbar ? "text-black" : "text-white"}
+          <button class={`pr-2.5 text-white
             navbar-toggler
             border-0
             hover:shadow-none hover:no-underline
             py-2
             px-2.5
-            bg-transparent
+            bg-black
             focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
@@ -54,16 +53,16 @@ const Header = () => {
           <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
             <ul class="navbar-nav bg-black md:bg-transparent mt-2 flex flex-col list-style-none ml-auto">
               <li class="nav-item px-4 mx-auto pb-2 md:pb-0 pt-2 md:pt-0 md:border-r-2 border-b-2 md:border-b-0 w-full text-center border-blue-200">
-                <Link to="/home" className='nav-link text-white text-lg'>Home</Link>
+                <Link to="/home" className='nav-link text-white hover:text-sky-500 text-lg'>Home</Link>
               </li>
               <li class="nav-item px-4 mx-auto pb-2 md:pb-0 md:border-r-2 border-b-2 md:border-b-0 w-full text-center border-blue-200">
-                <Link to="/blogs" className='nav-link text-white text-lg'>Blogs</Link>
+                <Link to="/blogs" className='nav-link text-white hover:text-sky-500 text-lg'>Blogs</Link>
               </li>
               <li class="nav-item px-4 mx-auto pb-2 md:pb-0 md:border-r-2 border-b-2 md:border-b-0 w-full text-center border-blue-200">
-                <a className='nav-link text-white text-lg' href="#aboutMe">About</a>
+                <a className='nav-link text-white hover:text-sky-500 text-lg' href="#aboutMe">About</a>
               </li>
               <li class="nav-item px-4 mx-auto pb-2 w-full text-center md:pb-0">
-                <a className='nav-link text-white text-lg' href="#contactMe">Contact</a>
+                <a className='nav-link text-white hover:text-sky-500 text-lg' href="#contactMe">Contact</a>
               </li>
 
             </ul>

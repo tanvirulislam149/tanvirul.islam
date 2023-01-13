@@ -42,9 +42,9 @@ const Education = () => {
           icon={<MdWork />}
         >
           <h3 className="vertical-timeline-element-title">Reactjs Developer Intern</h3>
-          <h4 className="vertical-timeline-element-subtitle">Bengaluru, India</h4>
+          <h4 className="vertical-timeline-element-subtitle">Across The Globe (ATG), India</h4>
           <p>
-            Making Responsive Website, Bug Fixing, API Integration
+            Making Responsive Frontend, Bug Fixing, API Integration
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -57,7 +57,7 @@ const Education = () => {
           <h3 className="vertical-timeline-element-title">Port City International University</h3>
           <h4 className="vertical-timeline-element-subtitle">Chattogram, Bangladesh</h4>
           <p>
-            Computer Science Engineering
+            Computer Science & Engineering
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
