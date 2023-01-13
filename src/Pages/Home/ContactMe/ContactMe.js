@@ -12,6 +12,7 @@ const ContactMe = () => {
   const [filled, setFilled] = useState(false);
   const form = useRef();
   const toastId = React.useRef(null);
+  const condition = true;
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -146,6 +147,7 @@ const ContactMe = () => {
             ></textarea>{" "}
             <br />
             <input
+              disabled={filled ? true : false}
               className="cursor-pointer bg-sky-400 text-black font-bold text-xl my-2 rounded-md w-42 px-4 py-2"
               type="submit"
               value="Send Email"

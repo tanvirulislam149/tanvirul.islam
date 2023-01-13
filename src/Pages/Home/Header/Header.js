@@ -59,10 +59,10 @@ const Header = () => {
                 <Link to="/blogs" className='nav-link text-white hover:text-sky-500 text-lg'>Blogs</Link>
               </li>
               <li class="nav-item px-4 mx-auto pb-2 md:pb-0 md:border-r-2 border-b-2 md:border-b-0 w-full text-center border-blue-200">
-                <a className='nav-link text-white hover:text-sky-500 text-lg' href="#aboutMe">About</a>
+                <a className='nav-link text-white hover:text-sky-500 text-lg' href="/home#aboutMe">About</a>
               </li>
               <li class="nav-item px-4 mx-auto pb-2 w-full text-center md:pb-0">
-                <a className='nav-link text-white hover:text-sky-500 text-lg' href="#contactMe">Contact</a>
+                <a className='nav-link text-white hover:text-sky-500 text-lg' href="/home#contactMe">Contact</a>
               </li>
 
             </ul>
