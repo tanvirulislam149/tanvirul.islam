@@ -1,10 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { FaPhoneAlt, FaCopyright } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import logo from "../../../Images/tanvir.png";
 import { useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer, toast, Zoom } from "react-toastify";
 import { BsTelephone } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { GrLocation } from "react-icons/gr";
@@ -29,7 +26,7 @@ const ContactMe = () => {
         <p className="pl-2">Pending</p>
       </div>,
       {
-        hideProgressBar: true,
+        autoClose: false
       }
     );
     setFilled(true);
@@ -155,7 +152,7 @@ const ContactMe = () => {
             />
           </form>
         </div>
-        <ToastContainer position="top-center" theme="dark" />
+        <ToastContainer position="top-center" transition={Zoom} />
       </div>
     </div>
   );
