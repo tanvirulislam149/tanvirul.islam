@@ -49,7 +49,7 @@ const Projects = () => {
           <div className="flex justify-evenly mx-5">
             <a
               className="flex py-5"
-              href="https://assignment-12-ca3ac.web.app/"
+              href="https://auto-parts-client.vercel.app/"
               target={"blank"}
             >
               <MdComputer className="h-12 w-12 mr-3" />
@@ -88,7 +88,7 @@ const Projects = () => {
           <div className="flex justify-evenly mx-5">
             <a
               className="flex py-5"
-              href="https://warehouse-management-eb91a.web.app/"
+              href="https://warehouse-management-client.vercel.app/"
               target={"blank"}
             >
               <MdComputer className="h-12 w-12 mr-3" />
