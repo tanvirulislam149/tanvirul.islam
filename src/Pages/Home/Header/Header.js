@@ -8,7 +8,6 @@ const Header = () => {
 
   window.onscroll = function () {
     const position = window.pageYOffset;
-    console.log(position);
     if (position < 100) {
       setNavbar(true);
     } else {
