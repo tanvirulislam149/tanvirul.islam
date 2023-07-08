@@ -1,22 +1,22 @@
 const allProjects = [
   {
     id: 1,
-    name: "AutoParts Industries Ltd.",
+    name: "BikeParts",
     description:
-      "This is a website about Car parts manufacturer company. This company makes some parts and deliver them to customers. Here’s a website to expand their business.",
+      "This is a website about Bike parts company. This company makes some parts and deliver them to customers. Here’s a website to expand their business.",
     features: [
-      "User can buy car parts from here.",
+      "User can buy and pay for bike parts from here.",
       "Admin can manage the website.",
-      "Authenticate user and admin.",
+      "Authenticate user and admin and JWT is implemented so that others can't access website data.",
     ],
     tech: "React, Firebase, NodeJs, ExpressJs, MongoDB, Stripe",
     clientLink: "https://github.com/tanvirulislam149/auto-parts-client",
     serverLink: "https://github.com/tanvirulislam149/auto-parts-server",
     SiteLink: "https://bike-parts.vercel.app/",
-    pictures1: "https://i.ibb.co/RH4TKFw/Screenshot-2022-06-15-123445.png",
-    pictures2: "https://i.ibb.co/v36c9v2/Screenshot-2022-06-15-123534.png",
-    pictures3: "https://i.ibb.co/DQCZFTp/Screenshot-2022-06-15-123605.png",
-    pictures4: "https://i.ibb.co/HYRjvhF/Screenshot-2022-06-15-123726.png",
+    pictures1: "https://i.ibb.co/N9nJQ2w/Screenshot-2023-07-08-155942.png",
+    pictures2: "https://i.ibb.co/17FydsL/Screenshot-2023-07-08-160003.png",
+    pictures3: "https://i.ibb.co/bXz4QbC/Screenshot-2023-07-08-160042.png",
+    pictures4: "https://i.ibb.co/Hh4dSkt/Screenshot-2023-07-08-160140.png",
   },
   {
     id: 2,
@@ -34,10 +34,10 @@ const allProjects = [
     serverLink:
       "https://github.com/tanvirulislam149/warehouse-management-server",
     SiteLink: "https://warehouse-management-client.vercel.app/",
-    pictures1: "https://i.ibb.co/98VcXVn/Screenshot-2022-06-15-124459.png",
-    pictures2: "https://i.ibb.co/WKf9G6T/Screenshot-2022-06-15-124557.png",
-    pictures3: "https://i.ibb.co/XjHHx0z/Screenshot-2022-06-15-124618.png",
-    pictures4: "https://i.ibb.co/g4XMQyx/Screenshot-2022-06-15-124645.png",
+    pictures1: "https://i.ibb.co/Vx58gBD/Screenshot-2023-07-08-161450.png",
+    pictures2: "https://i.ibb.co/3fbnz9W/Screenshot-2023-07-08-161726.png",
+    pictures3: "https://i.ibb.co/YhzsqLF/Screenshot-2023-07-08-161759.png",
+    pictures4: "https://i.ibb.co/RNQVwpM/Screenshot-2023-07-08-161831.png",
   },
   {
     id: 3,

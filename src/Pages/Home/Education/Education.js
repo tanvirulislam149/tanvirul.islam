@@ -50,7 +50,7 @@ const Education = () => {
         <VerticalTimelineElement
           contentStyle={{ background: 'rgb(17 24 39)', color: '#fff' }}
           className="vertical-timeline-element--work"
-          date="Nov 2022 - present"
+          date="Jan 2023 - present"
           iconStyle={{ background: 'rgb(17 24 39)', color: 'rgb(14 165 233)' }}
           icon={<MdSchool />}
         >
