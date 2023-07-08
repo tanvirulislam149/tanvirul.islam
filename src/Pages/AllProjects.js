@@ -12,7 +12,7 @@ const allProjects = [
     tech: "React, Firebase, NodeJs, ExpressJs, MongoDB, Stripe",
     clientLink: "https://github.com/tanvirulislam149/auto-parts-client",
     serverLink: "https://github.com/tanvirulislam149/auto-parts-server",
-    SiteLink: "https://auto-parts-client.vercel.app/",
+    SiteLink: "https://bike-parts.vercel.app/",
     pictures1: "https://i.ibb.co/RH4TKFw/Screenshot-2022-06-15-123445.png",
     pictures2: "https://i.ibb.co/v36c9v2/Screenshot-2022-06-15-123534.png",
     pictures3: "https://i.ibb.co/DQCZFTp/Screenshot-2022-06-15-123605.png",
