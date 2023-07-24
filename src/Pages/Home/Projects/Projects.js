@@ -36,13 +36,13 @@ const Projects = () => {
         <img className="md:w-7/12 w-full" src={car} alt="" />
         <div className="bg-gray-900 text-sky-500 w-full md:w-1/2 flex flex-col justify-center">
           <p className="text-3xl font-extrabold banner-font text-center py-6">
-            AUTOPARTS INDUSTRIES LTD.
+            Bike-parts INDUSTRIES LTD.
           </p>
           <li className="pl-8 font-bold pb-4">
             Build With MERN Stack Technology
           </li>
           <p className="px-4 text-font">
-            This is a website about Car parts manufacturer company. This
+            This is a website about bike parts manufacturer company. This
             company makes some parts and deliver them to customers. Here’s
             a website to expand their business.
           </p>
