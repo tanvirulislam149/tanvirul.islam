@@ -20,6 +20,25 @@ const allProjects = [
   },
   {
     id: 2,
+    name: "Creative Agencies",
+    description:
+      "This is a website about creative service agency. This company provides services that are creative like web development, web design and many more to the customers. Here’s a website to expand their business.",
+    features: [
+      "User can book services from here.",
+      "Admin can manage the website.",
+      "Authenticate user and admin",
+    ],
+    tech: "Next.js, Redux toolkit, MUI, Firebase, NodeJs, ExpressJs, MongoDB, Mongoose, Cloudinary",
+    clientLink: "https://github.com/tanvirulislam149/creative-agencies",
+    serverLink: "https://github.com/tanvirulislam149/creative-agencies-server",
+    SiteLink: "https://creative-agencies.vercel.app/",
+    pictures1: "https://i.ibb.co/bsLvTYH/Screenshot-2023-09-19-000042.png",
+    pictures2: "https://i.ibb.co/ZhdWtRf/Screenshot-2023-09-19-000137.png",
+    pictures3: "https://i.ibb.co/xGy5f3Y/Screenshot-2023-09-19-000209.png",
+    pictures4: "https://i.ibb.co/7t2NXS6/Screenshot-2023-09-19-000233.png",
+  },
+  {
+    id: 3,
     name: "Depot Warehouse Company",
     description:
       "A warehouse company website where people can store products and can see the products they store.",
@@ -40,7 +59,7 @@ const allProjects = [
     pictures4: "https://i.ibb.co/RNQVwpM/Screenshot-2023-07-08-161831.png",
   },
   {
-    id: 3,
+    id: 4,
     name: "DentCare Private Ltd.",
     description:
       "It is a private dental clinic website where patients can see the treatments.",
