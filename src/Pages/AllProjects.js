@@ -60,6 +60,26 @@ const allProjects = [
   },
   {
     id: 4,
+    name: "Foodie Restaurant App",
+    description:
+      "A simple mobile app for a restaurant called Foodie.",
+    features: [
+      "User can register and login here.",
+      "User can see the food items and item details.",
+      "All kind of navigation applied",
+    ],
+    tech: "React native expo, react native navigation, firebase, mealDB API",
+    clientLink:
+      "https://github.com/tanvirulislam149/Foodie-App",
+    serverLink: "",
+    SiteLink: "https://assignment-10-2b635.web.app/",
+    pictures1: "https://i.ibb.co/fD6ZdhF/foodie.png",
+    pictures2: "https://i.ibb.co/fD6ZdhF/foodie.png",
+    pictures3: "https://i.ibb.co/fD6ZdhF/foodie.png",
+    pictures4: "https://i.ibb.co/fD6ZdhF/foodie.png",
+  },
+  {
+    id: 5,
     name: "DentCare Private Ltd.",
     description:
       "It is a private dental clinic website where patients can see the treatments.",

@@ -4,6 +4,7 @@ import car from "../../../Images/car.png";
 import dentcare from "../../../Images/dentcare.png";
 import depot from "../../../Images/depot.png";
 import creative from "../../../Images/creative.jpg"
+import foodie from "../../../Images/foodie.png"
 import { MdComputer } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -145,13 +146,50 @@ const Projects = () => {
         </div>
       </motion.div>
       <motion.div
+        className="md:flex text-black my-10 md:my-0"
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: 0 }}
+        transition={{ duration: 0.7 }}
+      >
+        <div className="bg-gray-900 text-sky-500 w-full md:w-1/2 flex flex-col justify-center">
+          <p className="text-3xl font-extrabold banner-font text-center py-6">
+            Foodie Restaurant App
+          </p>
+          <li className="pl-8 font-bold pb-4">
+            Build With React Native Expo
+          </li>
+          <p className="px-4 text-font">
+            A simple mobile app for a restaurant called Foodie.
+          </p>
+          <div className="flex justify-evenly mx-5">
+            <a
+              className="flex py-5"
+              href="https://drive.google.com/file/d/1UZ2QUa-pHZTTHxReh4XRvIPyNMUhoMda/view?usp=sharing"
+              target={"blank"}
+            >
+              <MdComputer className="h-12 w-12 mr-3" />
+              <p className="text-xl md:text-2xl font-bold mt-1">
+                Download
+              </p>
+            </a>
+            <button
+              className="border-2 border-sky-500 hover:bg-black hover:text-white my-6 font-bold px-5"
+              onClick={() => goToDetails(4)}
+            >
+              Details
+            </button>
+          </div>
+        </div>
+        <img className="md:w-7/12 w-full" src={foodie} alt="" />
+      </motion.div>
+      <motion.div
         className="md:flex flex-row-reverse text-black"
         initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true, amount: 0 }}
         transition={{ duration: 0.7 }}
       >
-        <img className="md:w-7/12 w-full" src={dentcare} alt="" />
         <div className="w-full md:w-1/2 bg-gray-900 text-sky-500 flex flex-col justify-center">
           <p className="text-3xl font-extrabold banner-font text-center py-6">
             DENTCARE PRIVATE LTD.
@@ -174,12 +212,13 @@ const Projects = () => {
             </a>
             <button
               className="border-2 border-sky-500 hover:bg-black hover:text-white my-6 font-bold px-5"
-              onClick={() => goToDetails(3)}
+              onClick={() => goToDetails(5)}
             >
               Details
             </button>
           </div>
         </div>
+        <img className="md:w-7/12 w-full" src={dentcare} alt="" />
       </motion.div>
     </div>
   );

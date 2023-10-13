@@ -5,7 +5,9 @@ import { FaCheck } from "react-icons/fa";
 const ProjectDetails = () => {
   let { projectId } = useParams();
   const projectArray = projects.filter((p) => p.id === parseInt(projectId));
+  console.log(projectArray);
   const {
+    id,
     pictures1,
     pictures2,
     pictures3,
@@ -107,7 +109,7 @@ const ProjectDetails = () => {
         <div className="py-20 md:px-5 flex justify-center">
           <a
             type="button"
-            class="p-3 pt-3 bg-sky-500 border-2 border-sky-500 text-black font-medium md:text-lg banner-font leading-tight uppercase rounded shadow-md hover:bg-black hover:text-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out nav-transition"
+            class="p-3 pt-3 mr-3 bg-sky-500 border-2 border-sky-500 text-black font-medium md:text-lg banner-font leading-tight uppercase rounded shadow-md hover:bg-black hover:text-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out nav-transition"
             href={clientLink}
             target={"blank"}
           >
@@ -115,23 +117,26 @@ const ProjectDetails = () => {
             Client-side Code
           </a>{" "}
           <br />
-          <a
-            type="button"
-            class="md:my-0 mx-3 md:mx-10 p-3 bg-sky-500 border-2 border-sky-500 text-black font-medium md:text-lg banner-font leading-tight uppercase rounded shadow-md hover:bg-black hover:text-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out nav-transition"
-            href={serverLink}
-            target={"blank"}
-          >
-            {" "}
-            Server-side Code
-          </a>{" "}
+          {
+            serverLink ?
+              <a
+                type="button"
+                class="md:my-0 mx-3 md:mx-3 p-3 bg-sky-500 border-2 border-sky-500 text-black font-medium md:text-lg banner-font leading-tight uppercase rounded shadow-md hover:bg-black hover:text-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out nav-transition"
+                href={serverLink}
+                target={"blank"}
+              >
+                {" "}
+                Server-side Code
+              </a> : ""
+          }
           <br />
           <a
             type="button"
-            class=" p-3 bg-sky-500 border-2 border-sky-500 text-black font-medium md:text-lg banner-font leading-tight uppercase rounded shadow-md hover:bg-black hover:text-white hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out nav-transition"
+            class=" p-3 ml-3 bg-sky-500 border-2 border-sky-500 text-black font-medium md:text-lg banner-font leading-tight uppercase rounded shadow-md hover:bg-black hover:text-white hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out nav-transition"
             href={SiteLink}
             target={"blank"}
           >
-            Live-Site Link
+            {id === 4 ? "Download Link" : "Live-Site Link"}
           </a>{" "}
           <br />
         </div>
