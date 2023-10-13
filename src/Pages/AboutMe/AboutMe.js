@@ -28,12 +28,12 @@ const AboutMe = () => {
               Hello! I am Tanvirul Islam from Chattogram, Bangladesh
             </p>
             <p>
-              I am a full stack Web Developer specializing in React and Nextjs. I have
+              I am a MERN stack Web Developer specializing in Reactjs, Nextjs, Redux and etc. I have
               extensive skill in developing and deploying websites utilizing
               various open source packages. I also specialize in JavaScript,
-              Bootstrap, Tailwind and have some projects done with these. In
+              Bootstrap, Tailwind, Material UI and have some projects done with these. In
               addition, I am comfortable to work with NodeJs, ExpressJs,
-              MongoDB.
+              MongoDB, Mongoose.
             </p>
             <p className="text-xl py-5">
               Take a look at my work and get in touch.
