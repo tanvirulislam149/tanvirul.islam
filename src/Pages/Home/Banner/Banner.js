@@ -19,7 +19,7 @@ const Banner = () => {
         <p className="text-7xl md:text-8xl lg:text-9xl text-black">
           ISLAM
         </p>
-        <p className="text-2xl md:text-5xl">FULL STACK DEVELOPER</p>
+        <p className="text-2xl md:text-5xl">MERN STACK DEVELOPER</p>
         <a
           type="button"
           data-mdb-ripple="true"

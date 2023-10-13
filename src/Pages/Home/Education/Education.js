@@ -24,17 +24,6 @@ const Education = () => {
       </div>
       <VerticalTimeline>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: 'rgb(17 24 39)', color: '#fff' }}
-          date="Jan 2022 - Jun 2022"
-          iconStyle={{ background: 'rgb(17 24 39)', color: 'rgb(14 165 233)' }}
-          icon={<MdSchool />}
-        >
-          <h3 className="vertical-timeline-element-title">Complete Web Development Course With Jhankar Mahbub</h3>
-          <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-          <p>Web Development</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
           contentStyle={{ background: 'rgb(17 24 39)', color: '#fff' }}
           className="vertical-timeline-element--work"
           date="Aug 2022 - present"
