@@ -2,37 +2,80 @@ import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import React from "react";
 import "./Banner.css";
 import { motion } from "framer-motion";
+import ReactCurvedText from "react-curved-text";
 
 const Banner = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1.2 }}
+      transition={{ duration: 1 }}
       className="banner-font relative"
     >
       <div className="banner-img sm:w-4/6 md:pt-40 pt-32 pl-2 pr-6 lg:px-10">
         <div className="w-4/6">
-          <p className="text-7xl md:text-8xl xl:text-9xl text-black">
-            TANVIRUL
-          </p>
-          <p className="text-7xl md:text-8xl xl:text-9xl text-black">
-            ISLAM
-          </p>
-          <p className="text-2xl md:text-5xl">MERN STACK DEVELOPER</p>
+          <div className="flex">
+            {["T", "A", "N", "V", "I", "R", "U", "L"].map((l, index) =>
+              <motion.p
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: (0.1 * index), type: "spring", stiffness: 200 }}
+                className="text-7xl md:text-8xl xl:text-9xl text-black">
+                {l}
+              </motion.p>
+            )}
+          </div>
+          <div className="flex">
+            {["I", "S", "L", "A", "M"].map((l, index) =>
+              <motion.p
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: (0.1 * index), type: "spring", stiffness: 200 }}
+                className="text-7xl md:text-8xl xl:text-9xl text-black">
+                {l}
+              </motion.p>
+            )}
+          </div>
+          <p className="text-2xl md:text-5xl text-black">MERN STACK DEVELOPER</p>
           <a
             type="button"
             data-mdb-ripple="true"
             data-mdb-ripple-color="light"
-            className="text-lg inline-block px-6 my-4 nav-transition pt-3 pb-2 bg-black hover:text-black text-white font-medium leading-tight uppercase rounded shadow-md hover:bg-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out active:bg-sky-500"
+            className="text-lg inline-block px-2 m-4 nav-transition resumeBtn border-2 border-black rounded-full hover:text-black text-white font-medium leading-tight uppercase focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"
             href="https://drive.google.com/file/d/1xtZt-wI5v3mjx1y_tmLLntqgv5fLlkC7/view?usp=sharing"
             target={"blank"}
           >
-            My Resume
+            {/* My Resume */}
+            <ReactCurvedText
+              width={140}
+              height={80}
+              cx={70}
+              cy={80}
+              rx={55}
+              ry={55}
+              startOffset={5}
+              reversed={true}
+              textProps={{ style: { fontSize: 24 } }}
+              text="- My Resume -"
+            />
+            <div className="rotate-180">
+              <ReactCurvedText
+                width={140}
+                height={80}
+                cx={70}
+                cy={80}
+                rx={55}
+                ry={55}
+                startOffset={5}
+                reversed={true}
+                textProps={{ style: { fontSize: 24 } }}
+                text="- My Resume -"
+              />
+            </div>
           </a>
         </div>
       </div>
-      <div className="flex justify-end xl:pr-20 md:pt-40 pt-44 pl-2 pr-6 lg:px-10 banner-right-img absolute top-60 sm:top-0 right-0 sm:w-7/12 ml-auto">
+      <div className="flex justify-end xl:pr-20 md:pt-40 pt-44 pl-2 pr-6 lg:px-10 banner-right-img absolute top-96 sm:top-0 right-0 sm:w-7/12 ml-auto">
         <div className="sm:w-4/6 md:w-auto">
           <div className="pt-10 md:w-96 text-right">
             <p className="text-4xl md:text-6xl pr-20">Hello!!</p>

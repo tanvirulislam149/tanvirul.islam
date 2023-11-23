@@ -73,3 +73,19 @@
   width: 100vw;
   height: 100vh;
 }
+
+.resumeBtn {
+  animation-name: resume;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes resume {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
