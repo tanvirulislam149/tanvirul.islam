@@ -72,7 +72,7 @@ const allProjects = [
     clientLink:
       "https://github.com/tanvirulislam149/Foodie-App",
     serverLink: "",
-    SiteLink: "https://assignment-10-2b635.web.app/",
+    SiteLink: "https://drive.google.com/file/d/1UZ2QUa-pHZTTHxReh4XRvIPyNMUhoMda/view?usp=sharing",
     pictures1: "https://i.ibb.co/fD6ZdhF/foodie.png",
     pictures2: "https://i.ibb.co/fD6ZdhF/foodie.png",
     pictures3: "https://i.ibb.co/fD6ZdhF/foodie.png",
