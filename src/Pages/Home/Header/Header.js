@@ -49,19 +49,19 @@ const Header = () => {
               </path>
             </svg>
           </button>
-          <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
-            <ul class="navbar-nav bg-black md:bg-transparent mt-2 flex flex-col list-style-none ml-auto">
-              <li class="nav-item px-4 mx-auto pb-2 md:pb-0 pt-2 md:pt-0 md:border-r-2 border-b-2 md:border-b-0 w-full text-center border-blue-200">
-                <Link to="/home" className='nav-link text-white hover:text-sky-500 text-lg'>Home</Link>
+          <div class="collapse navbar-collapse flex-grow banner-font items-center" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-bg bg-black md:bg-transparent mt-2 flex flex-col list-style-none ml-auto">
+              <li class="nav-item hover:translate-y-1 nav-transition px-4 mx-auto py-2 md:py-0 md:pt-0  border-b-2 md:border-b-0 w-full text-center border-blue-200">
+                <Link to="/home" className='nav-link text-white hover:text-sky-500 nav-transition  text-2xl'>Home</Link>
               </li>
-              <li class="nav-item px-4 mx-auto pb-2 md:pb-0 md:border-r-2 border-b-2 md:border-b-0 w-full text-center border-blue-200">
-                <Link to="/blogs" className='nav-link text-white hover:text-sky-500 text-lg'>Blogs</Link>
+              <li class="nav-item hover:translate-y-1 nav-transition px-4 mx-auto py-2 md:py-0  border-b-2 md:border-b-0 w-full text-center border-blue-200">
+                <Link to="/blogs" className='nav-link text-white hover:text-sky-500 nav-transition  text-2xl'>Blogs</Link>
               </li>
-              <li class="nav-item px-4 mx-auto pb-2 md:pb-0 md:border-r-2 border-b-2 md:border-b-0 w-full text-center border-blue-200">
-                <a className='nav-link text-white hover:text-sky-500 text-lg' href="/home#aboutMe">About</a>
+              <li class="nav-item hover:translate-y-1 nav-transition px-4 mx-auto py-2 md:py-0  border-b-2 md:border-b-0 w-full text-center border-blue-200">
+                <a className='nav-link text-white hover:text-sky-500 nav-transition  text-2xl' href="/home#aboutMe">About</a>
               </li>
-              <li class="nav-item px-4 mx-auto pb-2 w-full text-center md:pb-0">
-                <a className='nav-link text-white hover:text-sky-500 text-lg' href="/home#contactMe">Contact</a>
+              <li class="nav-item hover:translate-y-1 nav-transition px-4 mx-auto py-2 w-full text-center md:py-0">
+                <a className='nav-link text-white hover:text-sky-500 nav-transition  text-2xl' href="/home#contactMe">Contact</a>
               </li>
 
             </ul>

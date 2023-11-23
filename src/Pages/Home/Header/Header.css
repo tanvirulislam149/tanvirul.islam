@@ -1,3 +1,17 @@
 .nav-transition {
-  transition: 0.6s;
+  transition: 0.5s;
+}
+
+.nav-bg {
+  background-color: transparent;
+}
+
+.nav-bg > li {
+  padding: 10px 15px;
+}
+
+@media (max-width: 992px) {
+  .nav-bg {
+    background-color: black;
+  }
 }
