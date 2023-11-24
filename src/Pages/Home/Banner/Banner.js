@@ -13,7 +13,7 @@ const Banner = () => {
       className="banner-font relative"
     >
       <div className="banner-img sm:w-4/6 md:pt-40 pt-32 pl-2 pr-6 lg:px-10">
-        <div className="w-4/6">
+        <div className="md:w-5/6">
           <div className="flex">
             {["T", "A", "N", "V", "I", "R", "U", "L"].map((l, index) =>
               <motion.p
@@ -55,7 +55,7 @@ const Banner = () => {
               ry={55}
               startOffset={5}
               reversed={true}
-              textProps={{ style: { fontSize: 24 } }}
+              textProps={{ style: { fontSize: 23 } }}
               text="- My Resume -"
             />
             <div className="rotate-180">
@@ -68,14 +68,14 @@ const Banner = () => {
                 ry={55}
                 startOffset={5}
                 reversed={true}
-                textProps={{ style: { fontSize: 24 } }}
+                textProps={{ style: { fontSize: 23 } }}
                 text="- My Resume -"
               />
             </div>
           </a>
         </div>
       </div>
-      <div className="flex justify-end xl:pr-20 md:pt-40 pt-44 pl-2 pr-6 lg:px-10 banner-right-img absolute top-96 sm:top-0 right-0 sm:w-7/12 ml-auto">
+      <div className="flex justify-end xl:pr-20 md:pt-40 pt-0 pl-2 pr-6 lg:px-10 banner-right-img absolute top-3/4 sm:top-0 right-0 sm:w-7/12 ml-auto">
         <div className="sm:w-4/6 md:w-auto">
           <div className="pt-10 md:w-96 text-right">
             <p className="text-4xl md:text-6xl pr-20">Hello!!</p>
