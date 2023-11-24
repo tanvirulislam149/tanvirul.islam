@@ -3,8 +3,12 @@ import React from "react";
 import "./Banner.css";
 import { motion } from "framer-motion";
 import ReactCurvedText from "react-curved-text";
+import { FaAngleRight } from "react-icons/fa";
+import { useHover } from "@uidotdev/usehooks";
 
 const Banner = () => {
+  const [ref, hovering] = useHover();
+  // const { scrollYProgress } = useScroll();
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -37,28 +41,16 @@ const Banner = () => {
             )}
           </div>
           <p className="text-2xl md:text-5xl text-black">MERN STACK DEVELOPER</p>
-          <a
+          <a ref={ref}
             type="button"
             data-mdb-ripple="true"
             data-mdb-ripple-color="light"
-            className="text-lg inline-block px-2 m-4 nav-transition resumeBtn border-2 border-black rounded-full hover:text-black text-white font-medium leading-tight uppercase focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"
+            className="text-lg inline-block px-2.5 m-4 nav-transition border-2 border-black rounded-full hover:text-black text-white font-medium leading-tight uppercase focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out relative"
             href="https://drive.google.com/file/d/1xtZt-wI5v3mjx1y_tmLLntqgv5fLlkC7/view?usp=sharing"
             target={"blank"}
           >
             {/* My Resume */}
-            <ReactCurvedText
-              width={140}
-              height={80}
-              cx={70}
-              cy={80}
-              rx={55}
-              ry={55}
-              startOffset={5}
-              reversed={true}
-              textProps={{ style: { fontSize: 23 } }}
-              text="- My Resume -"
-            />
-            <div className="rotate-180">
+            <div className="resumeBtn">
               <ReactCurvedText
                 width={140}
                 height={80}
@@ -71,7 +63,22 @@ const Banner = () => {
                 textProps={{ style: { fontSize: 23 } }}
                 text="- My Resume -"
               />
+              <div className="rotate-180">
+                <ReactCurvedText
+                  width={140}
+                  height={80}
+                  cx={70}
+                  cy={80}
+                  rx={55}
+                  ry={55}
+                  startOffset={5}
+                  reversed={true}
+                  textProps={{ style: { fontSize: 23 } }}
+                  text="- My Resume -"
+                />
+              </div>
             </div>
+            <FaAngleRight className={`absolute top-14 text-black left-14 w-12 h-12 ${hovering ? "scale-150 translate-x-3 nav-transition" : ""}`} />
           </a>
         </div>
       </div>
