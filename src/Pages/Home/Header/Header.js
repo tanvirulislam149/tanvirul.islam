@@ -51,13 +51,13 @@ const Header = () => {
           </button>
           <div class="collapse navbar-collapse flex-grow banner-font items-center" id="navbarSupportedContent">
             <ul class="navbar-nav nav-bg bg-black md:bg-transparent mt-2 flex flex-col list-style-none ml-auto">
-              <li class="nav-item hover:translate-y-1 nav-transition px-4 mx-auto py-2 md:py-0 md:pt-0  border-b-2 md:border-b-0 w-full text-center border-sky-500">
+              <li class="nav-item hover:translate-y-1 nav-transition px-4 mx-auto py-2 md:py-0 md:pt-0  border-b-2 md:border-b-0 w-full text-center border-white">
                 <Link to="/home" className='nav-link text-white hover:text-sky-500 nav-transition  text-2xl'>Home</Link>
               </li>
-              <li class="nav-item hover:translate-y-1 nav-transition px-4 mx-auto py-2 md:py-0  border-b-2 md:border-b-0 w-full text-center border-sky-500">
+              <li class="nav-item hover:translate-y-1 nav-transition px-4 mx-auto py-2 md:py-0  border-b-2 md:border-b-0 w-full text-center border-white">
                 <Link to="/blogs" className='nav-link text-white hover:text-sky-500 nav-transition  text-2xl'>Blogs</Link>
               </li>
-              <li class="nav-item hover:translate-y-1 nav-transition px-4 mx-auto py-2 md:py-0  border-b-2 md:border-b-0 w-full text-center border-sky-500">
+              <li class="nav-item hover:translate-y-1 nav-transition px-4 mx-auto py-2 md:py-0  border-b-2 md:border-b-0 w-full text-center border-white">
                 <a className='nav-link text-white hover:text-sky-500 nav-transition  text-2xl' href="/home#aboutMe">About</a>
               </li>
               <li class="nav-item hover:translate-y-1 nav-transition px-4 mx-auto py-2 w-full text-center md:py-0">

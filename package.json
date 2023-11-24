@@ -13,7 +13,7 @@
     "@uidotdev/usehooks": "^2.4.1",
     "firebase": "^9.8.3",
     "flowbite-react": "^0.0.25",
-    "framer-motion": "^6.4.3",
+    "framer-motion": "^6.5.1",
     "react": "^18.1.0",
     "react-curved-text": "^3.0.0",
     "react-dom": "^18.1.0",
