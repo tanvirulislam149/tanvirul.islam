@@ -98,7 +98,7 @@
 
 .textAnimation {
   animation-name: webText;
-  animation-duration: 40s;
+  animation-duration: 60s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -108,6 +108,6 @@
     transform: translate(1500px);
   }
   to {
-    transform: translate(-800px);
+    transform: translate(-1400px);
   }
 }

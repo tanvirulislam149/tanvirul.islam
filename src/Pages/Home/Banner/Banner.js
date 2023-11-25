@@ -51,7 +51,7 @@ const Banner = () => {
             type="button"
             data-mdb-ripple="true"
             data-mdb-ripple-color="light"
-            className="text-lg inline-block px-2.5 m-4 nav-transition border-2 border-black rounded-full hover:text-black text-white font-medium leading-tight uppercase focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out relative"
+            className="text-lg inline-block z-10 px-2.5 m-4 nav-transition border-2 border-black rounded-full hover:text-black text-white font-medium leading-tight uppercase focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out relative"
             href="https://drive.google.com/file/d/1xtZt-wI5v3mjx1y_tmLLntqgv5fLlkC7/view?usp=sharing"
             target={"blank"}
           >
@@ -89,7 +89,7 @@ const Banner = () => {
         </div>
       </motion.div>
       <RightSection />
-      <p className="text-9xl hidden md:block opacity-10 absolute bottom-40 textAnimation">web developer</p>
+      <p style={{ fontSize: "220px" }} className="hidden md:block opacity-10 absolute bottom-24 textAnimation">web developer</p>
     </motion.div>
   );
 };
