@@ -16,6 +16,7 @@ import next from "../../Images/Nextjs-logo.svg-removebg-preview.png"
 import redux from "../../Images/redux-removebg-preview.png"
 import nextAuth from "../../Images/nauth-removebg-preview.png"
 import mui from "../../Images/mui-removebg-preview.png"
+import "./Skills.css"
 
 const Skills = () => {
   return (
@@ -32,7 +33,7 @@ const Skills = () => {
           <div className="mr-2 rounded-full bg-sky-500 h-5 w-5"></div>
         </div>
       </div>
-      <div className="grid md:grid-cols-4 grid-cols-2 gap-4 bg-sky-200 p-5 rounded-xl">
+      <div className="grid md:grid-cols-4 grid-cols-2 gap-4 bg-gradient-to-r from-sky-400 p-10 borderRadius">
         <motion.img
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

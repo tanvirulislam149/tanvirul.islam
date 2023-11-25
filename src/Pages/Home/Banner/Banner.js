@@ -1,4 +1,3 @@
-import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import React, { useRef } from "react";
 import "./Banner.css";
 import { motion, useScroll, useTransform } from "framer-motion";
