@@ -10,7 +10,7 @@ const RightSection = () => {
   });
   const x = useTransform(scrollYProgress, [0, 1], [0, 1000]);
   return (
-    <motion.div ref={skySection} style={{ translateX: x }} className="flex justify-end xl:pr-20 md:pt-40 pt-0 pl-2 pr-6 lg:px-10 banner-right-img absolute top-3/4 sm:top-0 right-0 sm:w-7/12 ml-auto">
+    <motion.div ref={skySection} style={{ translateX: x }} className="flex justify-end xl:pr-20 md:pt-40 pt-0 pl-2 pr-6 lg:px-10 banner-right-img absolute top-2/3 sm:top-0 right-0 sm:w-7/12 ml-auto">
       <div className="sm:w-4/6 md:w-auto">
         <div className="pt-10 md:w-96 text-right">
           <p className="text-4xl md:text-6xl pr-20">Hello!!</p>

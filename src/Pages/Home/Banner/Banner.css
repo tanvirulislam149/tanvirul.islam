@@ -10,7 +10,7 @@
 .banner-right-img {
   clip-path: polygon(43% 0, 100% 0%, 100% 100%, 0% 100%);
   /* background-color: rgba(194, 144, 144, 0.356); */
-  background-image: url("https://images.unsplash.com/photo-1480506132288-68f7705954bd?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D");
+  background-image: url("https://i.ibb.co/xYpYPGS/keyboard.jpg");
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.65);
   background-blend-mode: darken;
@@ -31,6 +31,7 @@
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
     background-color: transparent;
     background-image: none;
+    height: fit-content;
   }
 }
 
@@ -92,5 +93,21 @@
   }
   to {
     transform: rotate(180deg);
+  }
+}
+
+.textAnimation {
+  animation-name: webText;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes webText {
+  from {
+    transform: translate(1500px);
+  }
+  to {
+    transform: translate(-800px);
   }
 }

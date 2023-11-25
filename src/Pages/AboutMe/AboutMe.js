@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const AboutMe = () => {
   return (
-    <div id="aboutMe" className="md:flex overflow-hidden justify-around mt-28 sm:mt-0 md:py-28 px-4 py-12">
+    <div id="aboutMe" className="md:flex overflow-hidden justify-around mt-28 sm:mt-0 md:pb-28 px-4 pb-12">
       <div className="md:w-4/12">
         <motion.div
           initial={{ x: -200, opacity: 0 }}

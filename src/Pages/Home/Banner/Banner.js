@@ -20,7 +20,8 @@ const Banner = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="banner-font relative md:overflow-hidden"
+      style={{ height: "120vh" }}
+      className="banner-font relative overflow-hidden"
     >
       <motion.div ref={skySection} style={{ translateX: x }} className="banner-img sm:w-4/6 md:pt-40 pt-32 pl-2 pr-6 lg:px-10">
         <div className="md:w-5/6">
@@ -89,6 +90,7 @@ const Banner = () => {
         </div>
       </motion.div>
       <RightSection />
+      <p className="text-9xl hidden md:block opacity-10 absolute bottom-40 textAnimation">web developer</p>
     </motion.div>
   );
 };
