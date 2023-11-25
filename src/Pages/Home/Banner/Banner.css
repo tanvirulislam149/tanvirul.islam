@@ -3,13 +3,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@500&display=swap");
 
 .banner-img {
-  clip-path: polygon(0 0, 100% 0%, 60% 100%, 0% 100%);
-  background-color: rgb(14 165 233);
+  clip-path: polygon(0 0, 100% 0%, 63% 100%, 0% 100%);
+  background-color: rgba(14, 164, 233);
   height: 100vh;
 }
 .banner-right-img {
-  clip-path: polygon(45% 0, 100% 0%, 100% 100%, 0% 100%);
-  background-color: rgb(0, 0, 0);
+  clip-path: polygon(43% 0, 100% 0%, 100% 100%, 0% 100%);
+  /* background-color: rgba(194, 144, 144, 0.356); */
+  background-image: url("https://images.unsplash.com/photo-1480506132288-68f7705954bd?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.65);
+  background-blend-mode: darken;
   height: 100vh;
 }
 
@@ -26,6 +30,7 @@
   .banner-right-img {
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
     background-color: transparent;
+    background-image: none;
   }
 }
 
