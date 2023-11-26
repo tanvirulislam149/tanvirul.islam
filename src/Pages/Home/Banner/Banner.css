@@ -9,12 +9,18 @@
 }
 .banner-right-img {
   clip-path: polygon(43% 0, 100% 0%, 100% 100%, 0% 100%);
-  /* background-color: rgba(194, 144, 144, 0.356); */
-  background-image: url("https://i.ibb.co/xYpYPGS/keyboard.jpg");
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.65);
-  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0);
   height: 100vh;
+}
+.dev-text {
+  font-size: 220px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 5%;
+  text-align: center;
 }
 
 .banner-font2 {

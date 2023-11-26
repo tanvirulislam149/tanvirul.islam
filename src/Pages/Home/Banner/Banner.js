@@ -22,6 +22,8 @@ const Banner = () => {
       style={{ height: "120vh" }}
       className="banner-font relative overflow-hidden"
     >
+      {/* <p style={{ fontSize: "100px", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }} className="hidden md:block z-10 absolute">web developer</p> */}
+      <p className="hidden dev-text md:block">WEB DEVELOPER</p>
       <motion.div ref={skySection} style={{ translateX: x }} className="banner-img sm:w-4/6 md:pt-40 pt-32 pl-2 pr-6 lg:px-10">
         <div className="md:w-5/6">
           <div className="flex">
@@ -89,8 +91,7 @@ const Banner = () => {
         </div>
       </motion.div>
       <RightSection />
-      <p style={{ fontSize: "220px" }} className="hidden md:block opacity-10 absolute bottom-24 textAnimation">web developer</p>
-    </motion.div>
+    </motion.div >
   );
 };
 
