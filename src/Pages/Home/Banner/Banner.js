@@ -5,6 +5,9 @@ import ReactCurvedText from "react-curved-text";
 import { FaAngleRight } from "react-icons/fa";
 import { useHover } from "@uidotdev/usehooks";
 import RightSection from "./RightSection";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+import { IoIosArrowDown } from "react-icons/io";
+
 
 const Banner = () => {
   const [ref, hovering] = useHover();
@@ -14,6 +17,7 @@ const Banner = () => {
     offset: ["start start", "end start"]
   });
   const x = useTransform(scrollYProgress, [0, 1], [0, -1000]);
+  const indicatorOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -22,7 +26,6 @@ const Banner = () => {
       style={{ height: "120vh" }}
       className="banner-font relative overflow-hidden"
     >
-      {/* <p style={{ fontSize: "100px", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }} className="hidden md:block z-10 absolute">web developer</p> */}
       <p className="hidden dev-text md:block">WEB DEVELOPER</p>
       <motion.div ref={skySection} style={{ translateX: x }} className="banner-img sm:w-4/6 md:pt-40 pt-32 pl-2 pr-6 lg:px-10">
         <div className="md:w-5/6">
@@ -53,7 +56,7 @@ const Banner = () => {
             type="button"
             data-mdb-ripple="true"
             data-mdb-ripple-color="light"
-            className="text-lg inline-block z-10 px-2.5 m-4 nav-transition border-2 border-black rounded-full hover:text-black text-white font-medium leading-tight uppercase focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out relative"
+            className="text-lg inline-block px-2.5 m-4 nav-transition border-2 border-black rounded-full hover:text-black text-white font-medium leading-tight uppercase focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out relative"
             href="https://drive.google.com/file/d/1xtZt-wI5v3mjx1y_tmLLntqgv5fLlkC7/view?usp=sharing"
             target={"blank"}
           >
@@ -91,6 +94,19 @@ const Banner = () => {
         </div>
       </motion.div>
       <RightSection />
+      <motion.div style={{ opacity: indicatorOpacity }} className="scrollIndicatorCont z-10">
+        <div className="scrollIndicator">
+          <div>
+            <MdKeyboardDoubleArrowDown className="text-black arrowBtn w-7 h-7" />
+          </div>
+        </div>
+        <div className="flex justify-center">
+          <IoIosArrowDown className="w-7 h-7 -m-1.5" />
+        </div>
+        <div className="flex justify-center">
+          <IoIosArrowDown className="w-7 h-7 -m-2.5 opacity-60" />
+        </div>
+      </motion.div>
     </motion.div >
   );
 };

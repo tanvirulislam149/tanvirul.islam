@@ -27,20 +27,6 @@
   font-family: "Dancing Script", cursive;
 }
 
-@media (max-width: 640px) {
-  .banner-img {
-    clip-path: polygon(0 0, 100% 0%, 100% 40%, 0% 95%);
-    background-color: rgb(14 165 233);
-    height: 100vh;
-  }
-  .banner-right-img {
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-    background-color: transparent;
-    background-image: none;
-    height: fit-content;
-  }
-}
-
 .banner-font {
   font-family: "League Spartan", sans-serif;
 }
@@ -102,18 +88,56 @@
   }
 }
 
-.textAnimation {
-  animation-name: webText;
-  animation-duration: 60s;
+.arrowBtn {
+  animation-name: arrow;
+  animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
-@keyframes webText {
-  from {
-    transform: translate(1500px);
+@keyframes arrow {
+  0% {
+    transform: translate(0, -5px);
   }
-  to {
-    transform: translate(-1400px);
+  50% {
+    transform: translate(0, 5px);
+  }
+  100% {
+    transform: translate(0, -5px);
+  }
+}
+
+.scrollIndicator {
+  width: 35px;
+  height: 60px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 20px 2px lightgray;
+}
+
+.scrollIndicatorCont {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 640px) {
+  .banner-img {
+    clip-path: polygon(0 0, 100% 0%, 100% 40%, 0% 95%);
+    background-color: rgb(14 165 233);
+    height: 100vh;
+  }
+  .banner-right-img {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    background-color: transparent;
+    background-image: none;
+    height: fit-content;
+  }
+  .scrollIndicatorCont {
+    top: 60%;
   }
 }
