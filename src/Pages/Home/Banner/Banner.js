@@ -26,7 +26,7 @@ const Banner = () => {
       style={{ height: "120vh" }}
       className="banner-font relative overflow-hidden"
     >
-      <p className="hidden dev-text md:block">WEB DEVELOPER</p>
+      <p className="hidden md:block dev-text">WEB DEVELOPER</p>
       <motion.div ref={skySection} style={{ translateX: x }} className="banner-img sm:w-4/6 md:pt-40 pt-32 pl-2 pr-6 lg:px-10">
         <div className="md:w-5/6">
           <div className="flex">
@@ -56,7 +56,7 @@ const Banner = () => {
             type="button"
             data-mdb-ripple="true"
             data-mdb-ripple-color="light"
-            className="text-lg inline-block px-2.5 m-4 nav-transition border-2 border-black rounded-full hover:text-black text-white font-medium leading-tight uppercase focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out relative"
+            className="text-lg inline-block p-0 m-4 nav-transition border-2 border-black rounded-full font-medium leading-tight uppercase focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out relative"
             href="https://drive.google.com/file/d/1xtZt-wI5v3mjx1y_tmLLntqgv5fLlkC7/view?usp=sharing"
             target={"blank"}
           >
@@ -64,32 +64,32 @@ const Banner = () => {
             <div className="resumeBtn">
               <ReactCurvedText
                 width={140}
-                height={80}
+                height={70}
                 cx={70}
-                cy={80}
-                rx={55}
-                ry={55}
+                cy={70}
+                rx={45}
+                ry={45}
                 startOffset={5}
                 reversed={true}
-                textProps={{ style: { fontSize: 23 } }}
-                text="- My Resume -"
+                textProps={{ style: { fontSize: 22 } }}
+                text="My Resume -"
               />
               <div className="rotate-180">
                 <ReactCurvedText
                   width={140}
-                  height={80}
+                  height={70}
                   cx={70}
-                  cy={80}
-                  rx={55}
-                  ry={55}
+                  cy={70}
+                  rx={45}
+                  ry={45}
                   startOffset={5}
                   reversed={true}
-                  textProps={{ style: { fontSize: 23 } }}
-                  text="- My Resume -"
+                  textProps={{ style: { fontSize: 22 } }}
+                  text="My Resume -"
                 />
               </div>
             </div>
-            <FaAngleRight className={`absolute top-14 text-black left-14 w-12 h-12 ${hovering ? "scale-150 translate-x-3 nav-transition" : ""}`} />
+            <FaAngleRight className={`absolute top-12 text-black left-12 w-12 h-12 ${hovering ? "scale-150 translate-x-2 nav-transition" : ""}`} />
           </a>
         </div>
       </motion.div>

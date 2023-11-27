@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "./Header.css"
 import { Link } from "react-router-dom";
 import pic from "../../../Images/tanvir.png"
+import { RiMenu3Fill } from "react-icons/ri";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(true);
@@ -39,15 +40,15 @@ const Header = () => {
             hover:shadow-none hover:no-underline
             py-2
             px-2.5
-            bg-black
             focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+            {/* <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
               class="w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
               <path fill="currentColor"
                 d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
               </path>
-            </svg>
+            </svg> */}
+            <RiMenu3Fill className={`text-3xl font-extrabold ${navbar ? "text-black" : "text-white"}`} />
           </button>
           <div class="collapse navbar-collapse flex-grow banner-font items-center" id="navbarSupportedContent">
             <ul class="navbar-nav nav-bg bg-black md:bg-transparent mt-2 flex flex-col list-style-none ml-auto">
