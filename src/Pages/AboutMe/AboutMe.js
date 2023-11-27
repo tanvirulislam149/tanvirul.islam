@@ -11,9 +11,9 @@ const AboutMe = () => {
   })
 
   const scaleTranform = useTransform(scrollYProgress, [0, 0.45, 0.6, 1], [0, 1, 1, 0.5])
-  const yTranform = useTransform(scrollYProgress, [0, 1], ["-15%", "5%"])
+  const yTranform = useTransform(scrollYProgress, [0, 1], ["-5%", "5%"])
   return (
-    <motion.div ref={aboutRef} style={{ scale: scaleTranform, translateY: yTranform }} id="aboutMe" className="md:flex overflow-hidden justify-around mt-0 sm:mt-0 md:pb-28 px-4 pb-12">
+    <motion.div ref={aboutRef} style={{ scale: scaleTranform, translateY: yTranform }} id="aboutMe" className="md:flex overflow-hidden justify-around mt-0 md:pb-28 px-4 pb-12">
       <div className="md:w-4/12">
         <motion.div
         // initial={{ x: -200, opacity: 0 }}

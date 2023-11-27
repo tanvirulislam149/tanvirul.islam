@@ -23,7 +23,6 @@ const Banner = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      style={{ height: "120vh" }}
       className="banner-font relative overflow-hidden"
     >
       <p className="hidden md:block dev-text">WEB DEVELOPER</p>
