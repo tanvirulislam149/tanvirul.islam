@@ -101,10 +101,10 @@ const Banner = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <IoIosArrowDown className="w-7 h-7 -m-1.5" />
+          <IoIosArrowDown className="w-8 h-8 -m-1.5" />
         </div>
         <div className="flex justify-center">
-          <IoIosArrowDown className="w-7 h-7 -m-2.5 opacity-60" />
+          <IoIosArrowDown className="w-8 h-8 -m-4 opacity-60" />
         </div>
       </motion.div>
     </motion.div >
