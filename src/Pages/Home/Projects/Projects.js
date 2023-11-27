@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Projects.css";
 import car from "../../../Images/car.png";
 import dentcare from "../../../Images/dentcare.png";
@@ -7,13 +7,12 @@ import creative from "../../../Images/creative.jpg"
 import foodie from "../../../Images/foodie.png"
 import { MdComputer } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import allProjects from "../../AllProjects";
+import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
-  let navigate = useNavigate();
-  const goToDetails = (id) => {
-    navigate(`/project/${id}`);
-  };
+
   return (
     <div className="md:mx-0 py-10">
       <div className="py-8 md:pl-20 pl-4">
@@ -28,7 +27,14 @@ const Projects = () => {
           <div className="mr-2 rounded-full bg-sky-500 h-5 w-5"></div>
         </div>
       </div>
-      <motion.div
+      <div>
+        {
+          allProjects.map(p =>
+            <ProjectCard p={p} />
+          )
+        }
+      </div>
+      {/* <motion.div
         className="md:flex text-black"
         initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -219,7 +225,7 @@ const Projects = () => {
           </div>
         </div>
         <img className="md:w-7/12 w-full" src={dentcare} alt="" />
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 };
