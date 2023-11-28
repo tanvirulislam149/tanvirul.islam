@@ -2,6 +2,7 @@ import { useScroll, useTransform, motion } from 'framer-motion';
 import React, { useRef } from 'react'
 import { MdComputer } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
+import "./Projects.css"
 
 const ProjectCard = ({ p }) => {
   const imgRef = useRef(null);
@@ -16,18 +17,18 @@ const ProjectCard = ({ p }) => {
     offset: ["start end", "end start"]
   })
 
-  const y = useTransform(scrollYProgress, [0, 1], [600, -600])
+  const y = useTransform(scrollYProgress, [0, 1], [500, -700])
   return (
     <motion.div key={p.id}
-      className="md:flex text-black mb-40"
+      className="md:flex items-center text-black mb-40 overflow-hidden"
       initial={{ y: 100, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       viewport={{ once: true, amount: 0 }}
       transition={{ duration: 0.7 }}
     >
       <img ref={imgRef} className="md:w-6/12 w-full md:mx-12" src={p.demoImg} alt="" />
-      <div className='overflow-hidden md:w-1/2'>
-        <motion.div style={{ y }} className="text-sky-500 p-10 w-full flex flex-col justify-center overflow-hidden">
+      <div className='md:w-1/2'>
+        <motion.div style={{ y }} className="text-sky-500 md:px-10 w-full animationControl">
           <p className="text-3xl font-extrabold banner-font text-center py-6">
             {p.name}
           </p>
