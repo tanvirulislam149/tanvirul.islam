@@ -7,14 +7,14 @@ const AboutMe = () => {
   const aboutRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: aboutRef,
-    offset: ["0 1", "0.5 0"]
+    offset: ["0 1", "0 0"]
   })
 
-  const scaleTranform = useTransform(scrollYProgress, [0, 0.45, 0.6, 1], [0, 1, 1, 0.5])
-  const yTranform = useTransform(scrollYProgress, [0, 1], ["-5%", "5%"])
+  const scaleTranform = useTransform(scrollYProgress, [0.4, 0.7, 1], [0.5, 0.7, 1])
+  const yTranform = useTransform(scrollYProgress, [0.8, 1], ["0%", "25%"])
   return (
-    <motion.div ref={aboutRef} style={{ scale: scaleTranform, translateY: yTranform }} id="aboutMe" className="md:flex overflow-hidden justify-around mt-0 md:pb-28 px-4 pb-12">
-      <div className="md:w-4/12">
+    <motion.div ref={aboutRef} style={{ scale: scaleTranform, translateY: yTranform }} id="aboutMe" className="md:flex overflow-hidden justify-evenly items-center mt-32 mb-64 md:pb-0 px-4 pb-12">
+      <div className="md:w-5/12">
         <motion.div
         // initial={{ x: -200, opacity: 0 }}
         // whileInView={{ x: 0, opacity: 1 }}
@@ -49,14 +49,14 @@ const AboutMe = () => {
           </div>
         </motion.div>
       </div>
-      <div className="md:w-4/12">
+      <div className="md:w-5/12">
         <motion.img
           // initial={{ x: 200, opacity: 0 }}
           // whileInView={{ x: 0, opacity: 1 }}
           // viewport={{ once: true, amount: 0 }}
           // transition={{ duration: 0.7 }}
           style={{ border: "16px rgb(14 165 233) solid", borderRadius: "25px" }}
-          className="md:w-11/12"
+          className="md:w-10/12 mx-auto"
           src="https://i.ibb.co/D7msbHw/aboutme.jpg"
           alt=""
         />
