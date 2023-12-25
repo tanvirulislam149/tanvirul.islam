@@ -1,4 +1,4 @@
-import { useScroll, useTransform, motion } from 'framer-motion';
+import { useScroll, useTransform, motion, useSpring } from 'framer-motion';
 import React, { useRef } from 'react'
 import { MdComputer } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
@@ -14,17 +14,19 @@ const ProjectCard = ({ p }) => {
 
   const { scrollYProgress } = useScroll({
     target: imgRef,
-    offset: ["start end", "end start"]
+    offset: ["start end", "end end"]
   })
 
-  const y = useTransform(scrollYProgress, [0, 1], [500, -700])
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 1500,
+    damping: 100,
+    restDelta: 0.001
+  });
+
+  const y = useTransform(scaleX, [0, 1], [3000, 0])
   return (
     <motion.div key={p.id}
-      className="md:flex items-center text-black mb-40 overflow-hidden"
-      initial={{ y: 100, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
-      viewport={{ once: true, amount: 0 }}
-      transition={{ duration: 0.7 }}
+      className="md:flex items-center text-black mb-40"
     >
       <img ref={imgRef} className="md:w-6/12 w-full md:mx-12" src={p.demoImg} alt="" />
       <div className='md:w-1/2'>

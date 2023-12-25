@@ -1,19 +1,25 @@
 import React, { useRef } from "react";
 import pic from "../../Images/aboutme.jpg";
 import "./AboutMe.css";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const AboutMe = () => {
   const aboutRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: aboutRef,
-    offset: ["0 1", "0 0.2"]
+    offset: ["0 1", "0 0.1"]
   })
 
-  const scaleTranform = useTransform(scrollYProgress, [0, 0.9, 1], [0.4, 0.85, 1])
-  const yTranform = useTransform(scrollYProgress, [0.8, 1], [0, 150])
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 500,
+    damping: 50,
+    restDelta: 0.001
+  });
+
+  const scaleTranform = useTransform(scaleX, [0.2, 0.9, 1], [0.4, 0.9, 1])
+  const yTranform = useTransform(scrollYProgress, [0.9, 1], [0, 50])
   return (
-    <motion.div ref={aboutRef} style={{ scale: scaleTranform }} id="aboutMe" className="md:flex overflow-hidden justify-evenly items-center mt-32 mb-64 md:pb-0 px-4 pb-12">
+    <motion.div ref={aboutRef} style={{ scale: scaleTranform, y: yTranform }} id="aboutMe" className="md:flex overflow-hidden justify-evenly items-center mt-32 mb-32 md:pb-0 px-4 pb-12">
       <div className="md:w-5/12">
         <motion.div
         >
