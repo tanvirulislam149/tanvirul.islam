@@ -10,16 +10,12 @@ const AboutMe = () => {
     offset: ["0 1", "0 0.2"]
   })
 
-  const scaleTranform = useTransform(scrollYProgress, [0, 0.85, 1], [0.4, 0.85, 1])
+  const scaleTranform = useTransform(scrollYProgress, [0, 0.9, 1], [0.4, 0.85, 1])
   const yTranform = useTransform(scrollYProgress, [0.8, 1], [0, 150])
   return (
     <motion.div ref={aboutRef} style={{ scale: scaleTranform }} id="aboutMe" className="md:flex overflow-hidden justify-evenly items-center mt-32 mb-64 md:pb-0 px-4 pb-12">
       <div className="md:w-5/12">
         <motion.div
-        // initial={{ x: -200, opacity: 0 }}
-        // whileInView={{ x: 0, opacity: 1 }}
-        // viewport={{ once: true, amount: 0 }}
-        // transition={{ duration: 0.7 }}
         >
           <div className="text-font text-xl text-justify">
             <p className="banner-font md:text-7xl text-5xl text-sky-500">
