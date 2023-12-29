@@ -7,14 +7,29 @@ import creative from "../../../Images/creative.jpg"
 import foodie from "../../../Images/foodie.png"
 import { MdComputer } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import allProjects from "../../AllProjects";
 import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
 
+  const imgRef = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: imgRef,
+    offset: ["start end", "end start"]
+  })
+
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 1500,
+    damping: 100,
+    restDelta: 0.001
+  });
+
+  const x = useTransform(scaleX, [0, 1], ["100%", "-500%"])
+
   return (
-    <div className="md:mx-0 py-10">
+    <div ref={imgRef} className="md:mx-0 py-10" style={{ height: "1000vh" }}>
       <div className="py-8 md:pl-20 pl-4">
         <p className="banner-font md:text-7xl text-5xl text-sky-500">
           PROJECTS
@@ -27,10 +42,12 @@ const Projects = () => {
           <div className="mr-2 rounded-full bg-sky-500 h-5 w-5"></div>
         </div>
       </div>
-      <div>
+      <div style={{ position: "sticky", top: "150px" }} className="flex overflow-hidden">
         {
           allProjects.map(p =>
-            <ProjectCard p={p} />
+            <motion.div style={{ x }} className="w-screen">
+              <ProjectCard p={p} />
+            </motion.div>
           )
         }
       </div>

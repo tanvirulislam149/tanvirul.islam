@@ -5,32 +5,19 @@ import { useNavigate } from 'react-router-dom';
 import "./Projects.css"
 
 const ProjectCard = ({ p }) => {
-  const imgRef = useRef(null);
   let navigate = useNavigate();
 
   const goToDetails = (id) => {
     navigate(`/project/${id}`);
   };
 
-  const { scrollYProgress } = useScroll({
-    target: imgRef,
-    offset: ["start end", "end end"]
-  })
-
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 1500,
-    damping: 100,
-    restDelta: 0.001
-  });
-
-  const y = useTransform(scaleX, [0, 1], [3000, 0])
   return (
     <motion.div key={p.id}
-      className="md:flex items-center text-black mb-40"
+      className="md:flex items-center text-black mb-40 w-screen"
     >
-      <img ref={imgRef} className="md:w-6/12 w-full md:mx-12" src={p.demoImg} alt="" />
+      <img className="md:w-6/12 w-full md:mx-12" src={p.demoImg} alt="" />
       <div className='md:w-1/2'>
-        <motion.div style={{ y }} className="text-sky-500 md:px-10 w-full animationControl">
+        <motion.div className="text-sky-500 md:px-10 w-full animationControl">
           <p className="text-3xl font-extrabold banner-font text-center py-6">
             {p.name}
           </p>
