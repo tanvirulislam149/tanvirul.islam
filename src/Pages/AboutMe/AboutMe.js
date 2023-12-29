@@ -10,18 +10,12 @@ const AboutMe = () => {
     offset: ["0 1", "0 0.1"]
   })
 
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 500,
-    damping: 50,
-    restDelta: 0.001
-  });
-
-  const scaleTranform = useTransform(scaleX, [0.2, 0.9, 1], [0.4, 0.9, 1])
-  const yTranform = useTransform(scrollYProgress, [0.9, 1], [0, 50])
+  const scaleTranform = useTransform(scrollYProgress, [0.1, 0.5, 0.8, 1], [0.4, 0.55, 0.8, 1])
+  const y = useTransform(scrollYProgress, [0.7, 0.8, 1], ["0%", "5%", "20%"])
   return (
-    <motion.div ref={aboutRef} style={{ scale: scaleTranform, y: yTranform }} id="aboutMe" className="md:flex overflow-hidden justify-evenly items-center mt-32 mb-32 md:pb-0 px-4 pb-12">
+    <motion.div style={{ scale: scaleTranform, y }} id="aboutMe" className="md:flex overflow-hidden justify-evenly items-center mt-32 mb-64 md:pb-0 px-4 pb-12">
       <div className="md:w-5/12">
-        <motion.div
+        <motion.div ref={aboutRef}
         >
           <div className="text-font text-xl text-justify">
             <p className="banner-font md:text-7xl text-5xl text-sky-500">
