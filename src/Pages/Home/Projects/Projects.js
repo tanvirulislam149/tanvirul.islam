@@ -3,8 +3,8 @@ import "./Projects.css";
 import car from "../../../Images/car.png";
 import dentcare from "../../../Images/dentcare.png";
 import depot from "../../../Images/depot.png";
-import creative from "../../../Images/creative.jpg"
-import foodie from "../../../Images/foodie.png"
+import creative from "../../../Images/creative.jpg";
+import foodie from "../../../Images/foodie.png";
 import { MdComputer } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
@@ -12,44 +12,42 @@ import allProjects from "../../AllProjects";
 import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
-
   const imgRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
     target: imgRef,
-    offset: ["start end", "end start"]
-  })
-
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 1500,
-    damping: 100,
-    restDelta: 0.001
+    offset: ["start end", "end start"],
   });
 
-  const x = useTransform(scaleX, [0, 1], ["100%", "-500%"])
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 1000,
+    damping: 100,
+    restDelta: 0.001,
+  });
+
+  const x = useTransform(scaleX, [0, 1], ["100%", "-500%"]);
 
   return (
-    <div ref={imgRef} className="md:mx-0 py-10" style={{ height: "1000vh" }}>
+    <div ref={imgRef} className="md:mx-0 py-10">
       <div className="py-8 md:pl-20 pl-4">
-        <p className="banner-font md:text-7xl text-5xl text-sky-500">
-          PROJECTS
-        </p>
+        <p className="banner-font md:text-7xl text-5xl text-white">PROJECTS</p>
         <div className="flex">
-          <div className="mr-2 rounded-full bg-sky-500 h-5 w-5"></div>
-          <div className="mr-2 rounded-full bg-sky-500 h-5 w-5"></div>
-          <div className="mr-2 rounded-full bg-sky-500 h-5 w-5"></div>
-          <div className="mr-2 rounded-full bg-sky-500 h-5 w-5"></div>
-          <div className="mr-2 rounded-full bg-sky-500 h-5 w-5"></div>
+          <div className="mr-2 rounded-full bg-white h-5 w-5"></div>
+          <div className="mr-2 rounded-full bg-white h-5 w-5"></div>
+          <div className="mr-2 rounded-full bg-white h-5 w-5"></div>
+          <div className="mr-2 rounded-full bg-white h-5 w-5"></div>
+          <div className="mr-2 rounded-full bg-white h-5 w-5"></div>
         </div>
       </div>
-      <div style={{ position: "sticky", top: "150px" }} className="flex overflow-hidden">
-        {
-          allProjects.map(p =>
-            <motion.div style={{ x }} className="w-screen">
-              <ProjectCard p={p} />
-            </motion.div>
-          )
-        }
+      <div
+        // style={{ position: "sticky", top: "150px" }}
+        className="overflow-hidden"
+      >
+        {allProjects.map((p) => (
+          <motion.div className="w-screen">
+            <ProjectCard p={p} />
+          </motion.div>
+        ))}
       </div>
       {/* <motion.div
         className="md:flex text-black"
@@ -59,7 +57,7 @@ const Projects = () => {
         transition={{ duration: 0.7 }}
       >
         <img className="md:w-7/12 w-full" src={car} alt="" />
-        <div className="bg-gray-900 text-sky-500 w-full md:w-1/2 flex flex-col justify-center">
+        <div className="bg-gray-900 text-white w-full md:w-1/2 flex flex-col justify-center">
           <p className="text-3xl font-extrabold banner-font text-center py-6">
             Bike-parts INDUSTRIES LTD.
           </p>
@@ -83,7 +81,7 @@ const Projects = () => {
               </p>
             </a>
             <button
-              className="border-2 border-sky-500 hover:bg-black hover:text-white my-6 font-bold px-5"
+              className="border-2 border-white hover:bg-black hover:text-white my-6 font-bold px-5"
               onClick={() => goToDetails(1)}
             >
               Details
@@ -99,7 +97,7 @@ const Projects = () => {
         transition={{ duration: 0.7 }}
       >
         <img className="md:w-7/12 w-full" src={creative} alt="" />
-        <div className="bg-gray-900 text-sky-500 w-full md:w-1/2 flex flex-col justify-center">
+        <div className="bg-gray-900 text-white w-full md:w-1/2 flex flex-col justify-center">
           <p className="text-3xl font-extrabold banner-font text-center py-6">
             Creative Agencies
           </p>
@@ -121,7 +119,7 @@ const Projects = () => {
               </p>
             </a>
             <button
-              className="border-2 border-sky-500 hover:bg-black hover:text-white my-6 font-bold px-5"
+              className="border-2 border-white hover:bg-black hover:text-white my-6 font-bold px-5"
               onClick={() => goToDetails(2)}
             >
               Details
@@ -137,7 +135,7 @@ const Projects = () => {
         transition={{ duration: 0.7 }}
       >
         <img className="md:w-7/12 w-full" src={depot} alt="" />
-        <div className="bg-gray-900 text-sky-500 w-full md:w-1/2 flex flex-col justify-center">
+        <div className="bg-gray-900 text-white w-full md:w-1/2 flex flex-col justify-center">
           <p className="text-3xl font-extrabold banner-font text-center py-6">
             DEPOT WAREHOUSE COMPANY
           </p>
@@ -160,7 +158,7 @@ const Projects = () => {
               </p>
             </a>
             <button
-              className="border-2 border-sky-500 hover:bg-black hover:text-white my-6 font-bold px-5"
+              className="border-2 border-white hover:bg-black hover:text-white my-6 font-bold px-5"
               onClick={() => goToDetails(3)}
             >
               Details
@@ -175,7 +173,7 @@ const Projects = () => {
         viewport={{ once: true, amount: 0 }}
         transition={{ duration: 0.7 }}
       >
-        <div className="bg-gray-900 text-sky-500 w-full md:w-1/2 flex flex-col justify-center">
+        <div className="bg-gray-900 text-white w-full md:w-1/2 flex flex-col justify-center">
           <p className="text-3xl font-extrabold banner-font text-center py-6">
             Foodie Restaurant App
           </p>
@@ -197,7 +195,7 @@ const Projects = () => {
               </p>
             </a>
             <button
-              className="border-2 border-sky-500 hover:bg-black hover:text-white my-6 font-bold px-5"
+              className="border-2 border-white hover:bg-black hover:text-white my-6 font-bold px-5"
               onClick={() => goToDetails(4)}
             >
               Details
@@ -213,7 +211,7 @@ const Projects = () => {
         viewport={{ once: true, amount: 0 }}
         transition={{ duration: 0.7 }}
       >
-        <div className="w-full md:w-1/2 bg-gray-900 text-sky-500 flex flex-col justify-center">
+        <div className="w-full md:w-1/2 bg-gray-900 text-white flex flex-col justify-center">
           <p className="text-3xl font-extrabold banner-font text-center py-6">
             DENTCARE PRIVATE LTD.
           </p>
@@ -234,7 +232,7 @@ const Projects = () => {
               </p>
             </a>
             <button
-              className="border-2 border-sky-500 hover:bg-black hover:text-white my-6 font-bold px-5"
+              className="border-2 border-white hover:bg-black hover:text-white my-6 font-bold px-5"
               onClick={() => goToDetails(5)}
             >
               Details

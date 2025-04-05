@@ -12,28 +12,26 @@ import mongodb from "../../Images/mongodb.svg";
 import stripe from "../../Images/stripe.png";
 import axios from "../../Images/axios.svg";
 import { motion } from "framer-motion";
-import next from "../../Images/Nextjs-logo.svg-removebg-preview.png"
-import redux from "../../Images/redux-removebg-preview.png"
-import nextAuth from "../../Images/nauth-removebg-preview.png"
-import mui from "../../Images/mui-removebg-preview.png"
-import "./Skills.css"
+import next from "../../Images/Nextjs-logo.svg-removebg-preview.png";
+import redux from "../../Images/redux-removebg-preview.png";
+import nextAuth from "../../Images/nauth-removebg-preview.png";
+import mui from "../../Images/mui-removebg-preview.png";
+import "./Skills.css";
 
 const Skills = () => {
   return (
     <div className="py-20 md:px-28">
       <div className="md:pl-0 pl-5 py-0">
-        <p className="banner-font md:text-7xl text-5xl text-sky-500">
-          SKILLS
-        </p>
+        <p className="banner-font md:text-7xl text-5xl text-white">SKILLS</p>
         <div className="flex pb-8">
-          <div className="mr-2 rounded-full bg-sky-500 h-5 w-5"></div>
-          <div className="mr-2 rounded-full bg-sky-500 h-5 w-5"></div>
-          <div className="mr-2 rounded-full bg-sky-500 h-5 w-5"></div>
-          <div className="mr-2 rounded-full bg-sky-500 h-5 w-5"></div>
-          <div className="mr-2 rounded-full bg-sky-500 h-5 w-5"></div>
+          <div className="mr-2 rounded-full bg-white h-5 w-5"></div>
+          <div className="mr-2 rounded-full bg-white h-5 w-5"></div>
+          <div className="mr-2 rounded-full bg-white h-5 w-5"></div>
+          <div className="mr-2 rounded-full bg-white h-5 w-5"></div>
+          <div className="mr-2 rounded-full bg-white h-5 w-5"></div>
         </div>
       </div>
-      <div className="grid md:grid-cols-4 grid-cols-2 gap-4 bg-gradient-to-r from-sky-400 p-10 borderRadius">
+      <div className="grid md:grid-cols-4 grid-cols-2 gap-4 bg-white p-10 borderRadius">
         <motion.img
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

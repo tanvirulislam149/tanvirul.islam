@@ -8,12 +8,11 @@ import Footer from "./footer/footer";
 import Projects from "./Projects/Projects";
 import Skills from "./Skills";
 
-
 const Home = () => {
   return (
     <div>
       <Banner></Banner>
-      <AboutMe></AboutMe>
+      {/* <AboutMe></AboutMe> */}
       <Skills></Skills>
       <Projects></Projects>
       <Education></Education>

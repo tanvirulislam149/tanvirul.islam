@@ -22,8 +22,12 @@ const ProjectDetails = () => {
   } = projectArray[0];
   return (
     <div className="pt-20 md:px-20">
-      <p className="text-4xl text-sky-500 banner-font py-3">{name}</p>
-      <div id="carouselExampleIndicators" class="carousel slide relative" data-bs-ride="carousel">
+      <p className="text-4xl text-white banner-font py-3">{name}</p>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide relative"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
           <button
             type="button"
@@ -92,7 +96,10 @@ const ProjectDetails = () => {
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
         >
-          <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+          <span
+            class="carousel-control-prev-icon inline-block bg-no-repeat"
+            aria-hidden="true"
+          ></span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button
@@ -101,7 +108,10 @@ const ProjectDetails = () => {
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+          <span
+            class="carousel-control-next-icon inline-block bg-no-repeat"
+            aria-hidden="true"
+          ></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
@@ -109,7 +119,7 @@ const ProjectDetails = () => {
         <div className="py-20 md:px-5 flex justify-center">
           <a
             type="button"
-            class="p-3 pt-3 mr-3 bg-sky-500 border-2 border-sky-500 text-black font-medium md:text-lg banner-font leading-tight uppercase rounded shadow-md hover:bg-black hover:text-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out nav-transition"
+            class="p-3 pt-3 mr-3 bg-white border-2 border-white text-black font-medium md:text-lg banner-font leading-tight uppercase rounded shadow-md hover:bg-black hover:text-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out nav-transition"
             href={clientLink}
             target={"blank"}
           >
@@ -117,22 +127,23 @@ const ProjectDetails = () => {
             Client-side Code
           </a>{" "}
           <br />
-          {
-            serverLink ?
-              <a
-                type="button"
-                class="md:my-0 mx-3 md:mx-3 p-3 bg-sky-500 border-2 border-sky-500 text-black font-medium md:text-lg banner-font leading-tight uppercase rounded shadow-md hover:bg-black hover:text-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out nav-transition"
-                href={serverLink}
-                target={"blank"}
-              >
-                {" "}
-                Server-side Code
-              </a> : ""
-          }
+          {serverLink ? (
+            <a
+              type="button"
+              class="md:my-0 mx-3 md:mx-3 p-3 bg-white border-2 border-white text-black font-medium md:text-lg banner-font leading-tight uppercase rounded shadow-md hover:bg-black hover:text-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out nav-transition"
+              href={serverLink}
+              target={"blank"}
+            >
+              {" "}
+              Server-side Code
+            </a>
+          ) : (
+            ""
+          )}
           <br />
           <a
             type="button"
-            class=" p-3 ml-3 bg-sky-500 border-2 border-sky-500 text-black font-medium md:text-lg banner-font leading-tight uppercase rounded shadow-md hover:bg-black hover:text-white hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out nav-transition"
+            class=" p-3 ml-3 bg-white border-2 border-white text-black font-medium md:text-lg banner-font leading-tight uppercase rounded shadow-md hover:bg-black hover:text-white hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out nav-transition"
             href={SiteLink}
             target={"blank"}
           >
@@ -142,7 +153,7 @@ const ProjectDetails = () => {
         </div>
       </div>
       <div className="md:flex  justify-between py-20">
-        <p className="text-3xl md:w-1/4 text-center text-sky-500 banner-font py-3">
+        <p className="text-3xl md:w-1/4 text-center text-white banner-font py-3">
           DESCRIPTION
         </p>
         <p className="text-xl px-5 text-justify md:w-4/6 banner-font">
@@ -150,7 +161,7 @@ const ProjectDetails = () => {
         </p>
       </div>
       <div className="md:flex justify-between py-5">
-        <p className="text-3xl md:w-1/4 text-center text-sky-500 banner-font py-3">
+        <p className="text-3xl md:w-1/4 text-center text-white banner-font py-3">
           FEATURES
         </p>
         <div className="text-xl px-5 md:w-4/6 banner-font">
@@ -160,7 +171,7 @@ const ProjectDetails = () => {
         </div>
       </div>
       <div className="md:flex justify-between py-20">
-        <p className="text-3xl md:w-1/4 text-center text-sky-500 banner-font">
+        <p className="text-3xl md:w-1/4 text-center text-white banner-font">
           TECHNOLOGIES
         </p>
         <p className="text-xl md:w-4/6 px-5 banner-font">{tech}</p>

@@ -3,23 +3,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@500&display=swap");
 
 .banner-img {
-  clip-path: polygon(0 0, 100% 0%, 63% 100%, 0% 100%);
-  background-color: rgba(14, 164, 233);
+  clip-path: polygon(0 0, 100% 0%, 69% 100%, 0% 100%);
+  background-color: rgb(255, 255, 255);
   height: 100vh;
 }
 .banner-right-img {
-  clip-path: polygon(43% 0, 100% 0%, 100% 100%, 0% 100%);
-  background-color: rgba(0, 0, 0);
+  clip-path: polygon(33% 0, 100% 0%, 100% 100%, 0% 100%);
+  background-color: rgb(255, 255, 255);
   height: 100vh;
 }
 .dev-text {
-  font-size: 220px;
+  /* font-size: 220px; */
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   left: 0;
-  right: 0;
-  bottom: 0px;
   text-align: center;
   line-height: 1;
 }
@@ -109,20 +107,21 @@
 }
 
 .scrollIndicator {
-  width: 35px;
-  height: 60px;
+  /* width: 35px;
+  height: 60px; */
   background-color: white;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 0px 20px 2px lightgray;
+  color: black;
+}
+
+.scrollIndicator > p {
+  font-weight: 300;
+  font-size: 20px;
 }
 
 .scrollIndicatorCont {
   position: absolute;
-  top: 90%;
-  left: 50%;
+  bottom: 0;
+  right: 0;
   transform: translate(-50%, -50%);
 }
 
