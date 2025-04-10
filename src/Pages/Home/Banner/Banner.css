@@ -1,9 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 .banner-img {
-  clip-path: polygon(0 0, 100% 0%, 69% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 67% 100%, 0% 100%);
   background-color: rgb(255, 255, 255);
   height: 100vh;
 }
@@ -11,6 +9,23 @@
   clip-path: polygon(33% 0, 100% 0%, 100% 100%, 0% 100%);
   background-color: rgb(255, 255, 255);
   height: 100vh;
+}
+
+.centered_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  mix-blend-mode: difference;
+}
+
+.banner_cont {
+  height: 200vh;
+}
+
+.polygon_width {
+  width: 60%;
 }
 .dev-text {
   /* font-size: 220px; */
@@ -23,15 +38,15 @@
 }
 
 .banner-font2 {
-  font-family: "Dancing Script", cursive;
+  font-family: "Playfair Display", serif;
 }
 
 .banner-font {
-  font-family: "League Spartan", sans-serif;
+  font-family: "Playfair Display", serif;
 }
 
 .text-font {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
 }
 
 .bg-video {
@@ -126,18 +141,4 @@
 }
 
 @media (max-width: 640px) {
-  .banner-img {
-    clip-path: polygon(0 0, 100% 0%, 100% 40%, 0% 95%);
-    background-color: rgb(14 165 233);
-    height: 100vh;
-  }
-  .banner-right-img {
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-    background-color: transparent;
-    background-image: none;
-    height: fit-content;
-  }
-  .scrollIndicatorCont {
-    top: 65%;
-  }
 }

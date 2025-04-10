@@ -5,6 +5,7 @@ import { ToastContainer, toast, Zoom } from "react-toastify";
 import { BsTelephone } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { GrLocation } from "react-icons/gr";
+import "./ContactMe.css";
 
 const ContactMe = () => {
   const [filled, setFilled] = useState(false);
@@ -113,7 +114,7 @@ const ContactMe = () => {
             </div>
           </div>
         </div>
-        <div className="md:w-8/12 w-full mt-20 border-white border-2 rounded-lg bg-gray-900 p-4 md:ml-10 md:mr-20 md:mt-0 text-white">
+        <div className="md:w-8/12 w-full mt-20 border-white border-2 rounded-lg contact_bg p-4 md:ml-10 md:mr-20 md:mt-0 text-white">
           <form ref={form} onSubmit={sendEmail}>
             <p className="text-sky-200">Name</p>
             <input

@@ -10,15 +10,18 @@ const RightSection = () => {
     target: skySection,
     offset: ["start start", "end start"],
   });
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "2000%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "1500%"]);
   const rOpacity = useTransform(scrollYProgress, [0, 0.1], [1, 0]);
   return (
     <motion.div
       // ref={skySection}
       style={{ translateX: x }}
-      className="flex justify-center xl:pr-20 md:pt-40 pt-0 pl-2 pr-6 lg:px-10 banner-right-img sm:absolute top-0 right-0 sm:w-7/12 ml-auto text-black"
+      className="flex justify-center xl:pr-20 md:pt-40 pt-0 pl-2 pr-6 lg:px-10 banner-right-img absolute top-0 right-0 polygon_width ml-auto text-black"
     >
-      <div className="sm:w-4/6 md:w-auto">
+      {/* <div className="absolute left-0 top-50% text-6xl text-black">
+        <p className="ml-1">Tanvirul Islam</p>
+      </div> */}
+      {/* <div className="sm:w-4/6 md:w-auto">
         <div className="pt-10 md:w-96 text-right">
           <p className="text-4xl md:text-6xl pr-20">Hello!!</p>
           <p className="text-5xl pr-10">.........</p>
@@ -58,7 +61,7 @@ const RightSection = () => {
           </a>
           <br />
         </div>
-      </div>
+      </div> */}
       <motion.div className="scrollIndicatorCont z-10">
         <div className="scrollIndicator flex justify-center items-center">
           <p>Scroll down</p>
