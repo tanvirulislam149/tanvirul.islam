@@ -59,7 +59,7 @@ const AboutMe = () => {
             <div>
               <ul className="list-disc ml-10">
                 <li className="text-white">
-                  <p>Frontend development with React, Nextjs and Redux.</p>
+                  Frontend development with React, Nextjs and Redux.
                 </li>
                 <li>
                   Backend development with Node.js, Express and Django REST
