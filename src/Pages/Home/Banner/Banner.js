@@ -133,12 +133,18 @@ const Banner = () => {
             className="centered_box flex justify-center font-semibold text-black"
           >
             <div>
-              <p className="text-8xl">Tanvirul Islam</p>
-              <p className="text-4xl text-center">A web developer</p>
+              <p className="text-5xl sm:text-8xl">Tanvirul Islam</p>
+              <p className="text-2xl sm:text-4xl text-center">
+                A web developer
+              </p>
               <div className="flex justify-center">
-                <button className="border-2 border-white  font-extrabold my-4 px-4 py-2 text-xl">
+                <a
+                  className="border-2 border-white font-extrabold my-4 px-4 py-2 text-xl"
+                  href="https://drive.google.com/file/d/1xtZt-wI5v3mjx1y_tmLLntqgv5fLlkC7/view?usp=sharing"
+                  target={"blank"}
+                >
                   My Resume
-                </button>
+                </a>
               </div>
               <div className="flex justify-center pt-0">
                 <a

@@ -12,6 +12,7 @@
 }
 
 .centered_box {
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -141,4 +142,10 @@
 }
 
 @media (max-width: 640px) {
+  .scrollIndicatorCont {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(-10%, -35%);
+  }
 }
