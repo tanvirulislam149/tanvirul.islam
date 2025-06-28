@@ -19,7 +19,7 @@ const Banner = () => {
   });
 
   const lx = useTransform(scrollYProgress, [0, 1], ["0%", "-300%"]);
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "-250%"]);
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "-1550%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.1, 0.2], [1, 1, 0]);
   return (
     <div>
@@ -158,7 +158,7 @@ const Banner = () => {
                 <br />
                 <a
                   type="button"
-                  class="p-2.5 mx-5 text-white border-2 border-white nav-transition font-medium text-xs leading-tight uppercase rounded-full  hover:bg-black hover:text-white hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-white active:shadow-lg transition duration-150 ease-in-out"
+                  class="p-2.5 mx-5 text-white border-2 border-white nav-transition font-medium text-xs leading-tight uppercase rounded-full  hover:bg-black hover:text-white hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-white active:shadow-lg transition duration-150 ease-in-out"
                   href="https://www.linkedin.com/in/tanvirul-islam-0242b4241"
                   target={"blank"}
                 >
@@ -178,7 +178,7 @@ const Banner = () => {
             </div>
           </motion.div>
         </div>
-        <motion.div styles={{ y }}>
+        <motion.div>
           <AboutMe />
         </motion.div>
       </motion.div>

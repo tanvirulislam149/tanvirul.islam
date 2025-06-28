@@ -20,7 +20,7 @@ import "./Skills.css";
 
 const Skills = () => {
   return (
-    <div className="py-20 md:px-28">
+    <div className="py-20 md:px-28 mt-[500px] lg:mt-0">
       <div className="md:pl-0 pl-5 py-0">
         <p className="banner-font md:text-7xl text-5xl text-white">SKILLS</p>
         <div className="flex pb-8">
