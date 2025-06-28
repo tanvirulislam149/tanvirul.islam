@@ -23,7 +23,7 @@ const AboutMe = () => {
       // ref={aboutRef}
       // style={{ scale: scaleTranform, y }}
       id="aboutMe"
-      className="md:flex overflow-hidden justify-evenly mt-32 mb-64 md:pb-0 px-4 pb-12"
+      className="md:flex overflow-hidden items-center justify-evenly mt-32 mb-64 md:pb-0 px-4 pb-12"
     >
       <div className="md:w-5/12">
         <motion.img
@@ -47,16 +47,35 @@ const AboutMe = () => {
               <div className="mr-2 rounded-full bg-white h-5 w-5"></div>
             </div>
             <p className="text-xl py-5">
-              Hello! I am Tanvirul Islam from Chattogram, Bangladesh
+              Hello! I am Tanvirul Islam from Chattogram, Bangladesh.
             </p>
             <p>
-              I am a MERN stack Web Developer specializing in Reactjs, Nextjs,
-              Redux and etc. I have extensive skill in developing and deploying
-              websites utilizing various open source packages. I also specialize
-              in JavaScript, Bootstrap, Tailwind, Material UI and have some
-              projects done with these. In addition, I am comfortable to work
-              with NodeJs, ExpressJs, MongoDB, Mongoose.
+              A passionate web developer skilled in building modern, responsive,
+              and scalable websites and web applications with hands-on
+              experience in technologies like Nextjs, Redux, Django rest
+              framework, Nodejs, Expressjs, MongoDB and PostgreSQL.
             </p>
+            <p>I specialize in:</p>
+            <div>
+              <ul className="list-disc ml-10">
+                <li className="text-white">
+                  <p>Frontend development with React, Nextjs and Redux.</p>
+                </li>
+                <li>
+                  Backend development with Node.js, Express and Django REST
+                  Framework.
+                </li>
+                <li>
+                  Building RESTful APIs and real-time features (chat,
+                  notifications).
+                </li>
+                <li>Database design with MongoDB and PostgreSQL.</li>
+                <li>
+                  Deploying full-stack apps to cloud platforms like Render,
+                  Vercel, and Netlify.
+                </li>
+              </ul>
+            </div>
             <p className="text-xl py-5">
               Take a look at my work and get in touch.
             </p>
