@@ -56,22 +56,24 @@ const ContactMe = () => {
 
   return (
     <div id="contactMe" className="mb-20">
-      <div className="mt-10 text-center ">
+      <div className="mt-10 mx-2 sm:mx-24">
         <p className="banner-font md:text-7xl text-5xl text-white">
           GET IN TOUCH
         </p>
-        <div className="flex justify-center pb-8">
-          <div className="mr-2 rounded-full bg-white h-5 w-5"></div>
-          <div className="mr-2 rounded-full bg-white h-5 w-5"></div>
-          <div className="mr-2 rounded-full bg-white h-5 w-5"></div>
-          <div className="mr-2 rounded-full bg-white h-5 w-5"></div>
-          <div className="mr-2 rounded-full bg-white h-5 w-5"></div>
+        <div className="flex justify-start">
+          <div className="flex justify-center pb-8">
+            <div className="mr-2 rounded-full bg-white h-5 w-5"></div>
+            <div className="mr-2 rounded-full bg-white h-5 w-5"></div>
+            <div className="mr-2 rounded-full bg-white h-5 w-5"></div>
+            <div className="mr-2 rounded-full bg-white h-5 w-5"></div>
+            <div className="mr-2 rounded-full bg-white h-5 w-5"></div>
+          </div>
         </div>
       </div>
       <div className="md:flex justify-center p-2 pb-6">
         <div className="md:w-7/12 w-full md:mx-10 md:pl-10">
           <p className="text-3xl font-semibold">Contact Information</p>
-          <p className="text-xl font-semibold text-slate-400 py-2">
+          <p className="text-xl font-semibold text_color py-2">
             I am ready to discuss anything in person
           </p>
           <div>
@@ -81,9 +83,7 @@ const ContactMe = () => {
               </div>
               <div className="ml-5">
                 <p className="text-xl font-semibold">Contact on phone</p>
-                <p className="md:text-xl text-lg text-slate-400">
-                  +8801553514065
-                </p>
+                <p className="text-lg text_color">+8801553514065</p>
               </div>
             </div>
           </div>
@@ -94,9 +94,7 @@ const ContactMe = () => {
               </div>
               <div className="ml-5">
                 <p className="text-xl font-semibold">Contact on mail</p>
-                <p className="md:text-xl text-lg text-slate-400">
-                  tanvirulislam149@gmail.com
-                </p>
+                <p className="text-lg text_color">tanvirulislam149@gmail.com</p>
               </div>
             </div>
           </div>
@@ -107,16 +105,14 @@ const ContactMe = () => {
               </div>
               <div className="ml-5">
                 <p className="text-xl font-semibold">Contact address</p>
-                <p className="md:text-xl text-lg text-slate-400">
-                  Chattogram, Bangladesh
-                </p>
+                <p className="text-lg text_color">Chattogram, Bangladesh</p>
               </div>
             </div>
           </div>
         </div>
         <div className="md:w-8/12 w-full mt-20 border-white border-2 rounded-lg contact_bg p-4 md:ml-10 md:mr-20 md:mt-0 text-white">
           <form ref={form} onSubmit={sendEmail}>
-            <p className="text-sky-200">Name</p>
+            <p className="text_color">Name</p>
             <input
               className="my-2 rounded-md w-full  border-2  border-white px-4 py-2 bg-black"
               required
@@ -125,7 +121,7 @@ const ContactMe = () => {
               name="user_name"
             />{" "}
             <br />
-            <p className="text-sky-200">Email</p>
+            <p className="text_color">Email</p>
             <input
               className="my-2 rounded-md w-full bg-black border-2 border-white px-4 py-2"
               required
@@ -134,7 +130,7 @@ const ContactMe = () => {
               name="user_email"
             />{" "}
             <br />
-            <p className="text-sky-200">Subject</p>
+            <p className="text_color">Subject</p>
             <input
               className="my-2 rounded-md w-full bg-black border-2 border-white px-4 py-2"
               required
@@ -143,7 +139,7 @@ const ContactMe = () => {
               name="subject"
             />{" "}
             <br />
-            <p className="text-sky-200">Message</p>
+            <p className="text_color">Message</p>
             <textarea
               className=" my-2 rounded-md w-full bg-black border-2 border-white px-4 py-2"
               required

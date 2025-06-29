@@ -11,7 +11,7 @@ const Education = () => {
     <div className="my-20">
       <div className="py-5 md:pl-32 pl-4">
         <p className="banner-font md:text-7xl text-5xl text-white">
-          EDUCATION & EXPERIENCE
+          EDUCATION and EXPERIENCE
         </p>
         <div className="flex">
           <div className="mr-2 rounded-full bg-white h-5 w-5"></div>
@@ -25,9 +25,9 @@ const Education = () => {
       </div>
       <VerticalTimeline>
         <VerticalTimelineElement
-          contentStyle={{ background: "rgb(17 24 39)", color: "#fff" }}
+          contentStyle={{ background: `rgba(84, 82, 82, 0.7)`, color: "#fff" }}
           className="vertical-timeline-element--work"
-          date="Aug 2022 - present"
+          date="Aug 2022 - Dec 2023"
           iconStyle={{ background: "rgb(17 24 39)", color: "rgb(14 165 233)" }}
           icon={<MdWork className="text-white" />}
         >
@@ -40,7 +40,10 @@ const Education = () => {
           <p>Making Responsive Frontend, Bug Fixing, API Integration</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          contentStyle={{ background: "rgb(17 24 39)", color: "#fff" }}
+          contentStyle={{
+            background: `rgba(84, 82, 82, 0.7)`,
+            color: "white",
+          }}
           className="vertical-timeline-element--work"
           date="Jan 2023 - present"
           iconStyle={{ background: "rgb(17 24 39)", color: "rgb(14 165 233)" }}
