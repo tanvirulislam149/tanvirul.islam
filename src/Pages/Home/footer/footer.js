@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div>
       <footer
-        class="md:flex footer_bg justify-between md:px-20 border-t-2 border-neutral-500 items-center text-white"
+        class="md:flex footer_bg justify-between md:px-20 border-t-2 border-neutral-400 items-center text-white"
         style={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}
       >
         {/* <div class="container px-6 pt-6"> */}
