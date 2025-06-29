@@ -4,7 +4,7 @@ import { MdComputer } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import "./Projects.css";
 
-const ProjectCard = ({ p }) => {
+const ProjectCard = ({ p, index }) => {
   let navigate = useNavigate();
 
   const goToDetails = (id) => {
@@ -14,11 +14,13 @@ const ProjectCard = ({ p }) => {
   return (
     <motion.div
       key={p.id}
-      className="md:flex items-center text-black mb-10 w-screen"
+      className={`md:flex items-center ${
+        index % 2 ? "flex-row-reverse" : ""
+      } text-black px-16 py-10 w-screen`}
     >
-      <img className="md:w-6/12 w-full md:mx-12" src={p.demoImg} alt="" />
-      <div className="md:w-1/2">
-        <motion.div className="text-white md:px-10 w-full animationControl">
+      <img className="md:w-6/12 w-full" src={p.pictures1} alt="" />
+      <div className="md:w-1/2 ">
+        <motion.div className="text-white w-full animationControl">
           <p className="text-3xl font-extrabold banner-font text-center py-6">
             {p.name}
           </p>

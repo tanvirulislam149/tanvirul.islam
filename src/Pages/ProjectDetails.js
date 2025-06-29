@@ -22,7 +22,8 @@ const ProjectDetails = () => {
   } = projectArray[0];
   return (
     <div className="pt-20 md:px-20">
-      <p className="text-4xl text-white banner-font py-3">{name}</p>
+      <div className="w-full h-[74px] z-10 bg-white fixed top-0 left-0"></div>
+      <p className="text-4xl text-white banner-font font-bold py-3">{name}</p>
       <div
         id="carouselExampleIndicators"
         class="carousel slide relative"
