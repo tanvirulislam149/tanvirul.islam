@@ -1,16 +1,10 @@
-import React from "react";
-import html from "../../Images/Html.png";
 import javascript from "../../Images/javascript.png";
 import react from "../../Images/react.png";
-import css from "../../Images/css.png";
-import tailwind from "../../Images/tailwind.png";
 import node from "../../Images/nodejs.png";
 import express from "../../Images/express.png";
 import mongodb from "../../Images/mongodb.png";
-import { motion } from "framer-motion";
 import next from "../../Images/nextjs.png";
 import redux from "../../Images/redux.png";
-import mui from "../../Images/mui.png";
 import postgresql from "../../Images/PostgreSQL.png";
 import python from "../../Images/python.png";
 import django from "../../Images/django.png";
