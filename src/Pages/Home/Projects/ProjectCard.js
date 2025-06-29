@@ -16,9 +16,13 @@ const ProjectCard = ({ p, index }) => {
       key={p.id}
       className={`md:flex items-center ${
         index % 2 ? "flex-row-reverse" : ""
-      } text-black px-16 py-10 w-screen`}
+      } text-black px-2 md:px-16 py-10 w-screen`}
     >
-      <img className="md:w-6/12 w-full" src={p.pictures1} alt="" />
+      <img
+        className="md:w-6/12 w-full border rounded-2xl border-gray-400"
+        src={p.pictures1}
+        alt=""
+      />
       <div className="md:w-1/2 ">
         <motion.div className="text-white w-full animationControl">
           <p className="text-3xl font-extrabold banner-font text-center py-6">

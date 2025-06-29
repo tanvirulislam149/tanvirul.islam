@@ -1,6 +1,31 @@
 const allProjects = [
   {
     id: 1,
+    name: "Muscle Gain",
+    description:
+      "A modern web application for managing gym memberships, classes, schedules, and more. Designed for gym owners, staff, and members to seamlessly interact and manage gym operations.",
+    features: [
+      "Member registration and login",
+      "User and Admin dashboard for gym management",
+      "Real time notification for user",
+      "Class scheduling and booking",
+      "Membership plans and payments",
+      "Attendance tracking",
+      "Mobile-responsive UI",
+    ],
+    build: "Build With Nextjs and Django rest framework",
+    tech: "Nextjs, Django rest framework, PostgreSQL, Django channels, Redis, Redux",
+    clientLink: "https://github.com/tanvirulislam149/gym_management_client",
+    serverLink: "https://github.com/tanvirulislam149/gym_management",
+    SiteLink: "https://gym-management-client-lilac.vercel.app/",
+    pictures1: "https://i.ibb.co/PvzYvtjS/Screenshot-2025-06-29-121013.png",
+    pictures2: "https://i.ibb.co/0NvM6cJ/Screenshot-2025-06-29-121101.png",
+    pictures3: "https://i.ibb.co/35F1xZng/Screenshot-2025-06-29-121150.png",
+    pictures4: "https://i.ibb.co/dsqPfJL0/Screenshot-2025-06-29-121259.png",
+    demoImg: "https://i.ibb.co/PvzYvtjS/Screenshot-2025-06-29-121013.png",
+  },
+  {
+    id: 2,
     name: "BikeParts Industries LTD",
     description:
       "This is a website about Bike parts company. This company makes some parts and deliver them to customers. Here’s a website to expand their business.",
@@ -14,7 +39,7 @@ const allProjects = [
     clientLink: "https://github.com/tanvirulislam149/auto-parts-client",
     serverLink: "https://github.com/tanvirulislam149/auto-parts-server",
     SiteLink: "https://bike-parts.vercel.app/",
-    pictures1: "https://i.ibb.co/N9nJQ2w/Screenshot-2023-07-08-155942.png",
+    pictures1: "https://i.ibb.co/twMTCMnN/Screenshot-2025-06-29-120142.png",
     pictures2: "https://i.ibb.co/17FydsL/Screenshot-2023-07-08-160003.png",
     pictures3: "https://i.ibb.co/bXz4QbC/Screenshot-2023-07-08-160042.png",
     pictures4: "https://i.ibb.co/Hh4dSkt/Screenshot-2023-07-08-160140.png",

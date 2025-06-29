@@ -73,7 +73,7 @@ const Header = () => {
               <li class="nav-item nav-transition px-4 mx-auto py-2 md:py-0 md:pt-0  border-b-2 md:border-b-0 w-full text-center">
                 <Link
                   to="/home"
-                  className="nav-link  hover:border-b-2 border-black nav-transition  text-2xl"
+                  className="nav-link font-bold hover:border-b-2 border-black nav-transition  text-2xl"
                 >
                   Home
                 </Link>
@@ -81,14 +81,14 @@ const Header = () => {
               <li class="nav-item nav-transition px-4 mx-auto py-2 md:py-0  border-b-2 md:border-b-0 w-full text-center">
                 <Link
                   to="/blogs"
-                  className="nav-link  hover:border-b-2 border-black nav-transition  text-2xl"
+                  className="nav-link font-bold hover:border-b-2 border-black nav-transition  text-2xl"
                 >
                   Blogs
                 </Link>
               </li>
               <li class="nav-item nav-transition px-4 mx-auto py-2 md:py-0  border-b-2 md:border-b-0 w-full text-center">
                 <a
-                  className="nav-link  hover:border-b-2 border-black nav-transition  text-2xl"
+                  className="nav-link font-bold hover:border-b-2 border-black nav-transition  text-2xl"
                   href="/home#aboutMe"
                 >
                   About
@@ -96,7 +96,7 @@ const Header = () => {
               </li>
               <li class="nav-item nav-transition px-4 mx-auto py-2 w-full text-center md:py-0">
                 <a
-                  className="nav-link  hover:border-b-2 border-black nav-transition  text-2xl"
+                  className="nav-link font-bold hover:border-b-2 border-black nav-transition  text-2xl"
                   href="/home#contactMe"
                 >
                   Contact

@@ -166,9 +166,9 @@ const ProjectDetails = () => {
           FEATURES
         </p>
         <div className="text-xl px-5 md:w-4/6 banner-font">
-          <li>{features[0]}</li>
-          <li>{features[1]}</li>
-          <li>{features[2]}</li>
+          {features.map((f, index) => (
+            <li key={index}>{f}</li>
+          ))}
         </div>
       </div>
       <div className="md:flex justify-between py-20">
