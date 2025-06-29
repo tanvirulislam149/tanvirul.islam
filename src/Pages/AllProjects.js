@@ -68,26 +68,23 @@ const allProjects = [
   },
   {
     id: 3,
-    name: "Depot Warehouse Company",
+    name: "Event Nest",
     description:
-      "A warehouse company website where people can store products and can see the products they store.",
+      "A Event management for organizing different events at different locations for making people's special day memorable",
     features: [
-      "Products and products details can be seen by user.",
-      "Managing products is available.",
-      "New user can register and login in this website.",
+      "User, Organizer and Admin authentication.",
+      "Organizing and Managing events",
+      "Send email for various notification",
     ],
-    build: "Build With MERN Stack Technology",
-    tech: "React, Firebase, NodeJs, ExpressJs, MongoDB",
-    clientLink:
-      "https://github.com/tanvirulislam149/warehouse-management-client",
-    serverLink:
-      "https://github.com/tanvirulislam149/warehouse-management-server",
-    SiteLink: "https://warehouse-management-client.vercel.app/",
-    pictures1: "https://i.ibb.co/Vx58gBD/Screenshot-2023-07-08-161450.png",
-    pictures2: "https://i.ibb.co/3fbnz9W/Screenshot-2023-07-08-161726.png",
-    pictures3: "https://i.ibb.co/YhzsqLF/Screenshot-2023-07-08-161759.png",
-    pictures4: "https://i.ibb.co/RNQVwpM/Screenshot-2023-07-08-161831.png",
-    demoImg: "https://i.ibb.co/b6HxbbZ/depot-2842e5dda981e2b07595.png",
+    build: "Build With Django",
+    tech: "Django",
+    clientLink: "https://github.com/tanvirulislam149/event_management_django",
+    SiteLink: "https://event-management-django.onrender.com/",
+    pictures1: "https://i.ibb.co/wh1yNvs9/Screenshot-2025-06-29-124307.png",
+    pictures2: "https://i.ibb.co/xSFdX7VW/Screenshot-2025-06-29-124340.png",
+    pictures3: "https://i.ibb.co/ZZKSN7b/Screenshot-2025-06-29-124406.png",
+    pictures4: "https://i.ibb.co/6RfLXw9t/Screenshot-2025-06-29-124524.png",
+    demoImg: "https://i.ibb.co/wh1yNvs9/Screenshot-2025-06-29-124307.png",
   },
 ];
 
