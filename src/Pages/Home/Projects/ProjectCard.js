@@ -18,18 +18,14 @@ const ProjectCard = ({ p, index }) => {
         index % 2 ? "flex-row-reverse" : ""
       } text-black px-2 md:px-16 py-10 w-screen`}
     >
-      <img
-        className="md:w-6/12 w-full border rounded-2xl border-gray-400"
-        src={p.pictures1}
-        alt=""
-      />
-      <div className="md:w-1/2 ">
+      <img className="md:w-7/12 w-full rounded-2xl" src={p.pictures1} alt="" />
+      <div className="md:w-5/12 ">
         <motion.div className="text-white w-full animationControl">
           <p className="text-3xl font-extrabold banner-font text-center py-6">
             {p.name}
           </p>
-          <li className="pl-8 font-bold pb-4">{p.build}</li>
-          <p className="px-4 text-font">{p.description}</p>
+          <li className="pl-8 font-bold text-lg pb-4 banner-font">{p.build}</li>
+          <p className="px-4 text-font text-justify">{p.description}</p>
           <div className="flex justify-evenly mx-5">
             <a className="flex py-5" href={p.SiteLink} target={"blank"}>
               <MdComputer className="h-12 w-12 mr-3" />
